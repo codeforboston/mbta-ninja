@@ -15,6 +15,7 @@ Event.prototype = {
 
 
 if (Meteor.isClient) {
+  // Get a list of all the events
   Template.body.helpers({
     events: function () {
       return Events.find({});
@@ -37,6 +38,17 @@ if (Meteor.isClient) {
       new Event(name, line, location, votes).save();
     }
   });  
+
+  Template.event.events({
+    // Upvote the current event
+    "click .upvote": function () {
+      Events.update(this._id, {$inc: {votes: 1}});
+    },
+    // Downvote the current event
+    "click .downvote": function () {
+      Events.update(this._id, {$inc: {votes: -1}});
+    }
+  });
 }
 
 if (Meteor.isServer) {
