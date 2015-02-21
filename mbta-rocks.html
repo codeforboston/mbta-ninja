@@ -1,14 +1,26 @@
 <head>
-  <title>mbta-rocks</title>
+  <title>MBTA Rocks!</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <div class="container">
+    <header>
+      <h1>Event List</h1>
+    </header>
 
-  {{> hello}}
+    <div>
+      {{#each events}}
+        {{> event}}
+      {{/each}}
+    </div>
+  </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="event">
+  <ul>
+    <li>{{line}}</li>
+    <li>{{location}}</li>
+    <li>{{name}}</li>
+    <li>{{votes}}</li>
+  </ul>
 </template>
