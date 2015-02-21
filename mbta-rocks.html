@@ -12,6 +12,7 @@
       {{#each events}}
         {{> event}}
       {{/each}}
+      {{> createEvent}}
     </div>
   </div>
 </body>
@@ -23,4 +24,14 @@
     <li>{{name}}</li>
     <li>{{votes}}</li>
   </ul>
+</template>
+
+<template name="createEvent">
+  <label for="nameInput"> Event Name: </label>
+  <input id="nameInput" type="text">
+  <label for="lineInput"> Line: </label>
+  <input id="lineInput" type="text">
+  <label for="locationInput"> Location: </label>
+  <input id="locationInput" type="text">  
+  <button>Save</button>
 </template>
