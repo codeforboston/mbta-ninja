@@ -21,20 +21,24 @@
 
 <template name="event">
   <ul>
-    <li>{{line}}</li>
-    <li>{{location}}</li>
     <li>{{name}}</li>
+    <li>{{location}}</li>
     <li>{{votes}}</li>
   </ul>
   <button class="upvote">Upvote</button>
-  <button class="downvote">Upvote</button>
+  <button class="downvote">Downvote</button>
 </template>
 
 <template name="createEvent">
-  <label for="nameInput"> Event Name: </label>
-  <input id="nameInput" type="text">
-  <label for="lineInput"> Line: </label>
-  <input id="lineInput" type="text">
+  <label for="nameInput"> Event Type: </label>
+  <select id="nameInput">
+    <option value="Crowded Train">Crowded Train</option>
+    <option value="Delayed Train">Delayed Train</option>    
+    <option value="Disabled Train">Disabled Train</option>
+    <option value="Medical Emergency">Medical Emergency</option>
+    <option value="Stuck Train">Stuck Train</option>
+    <option value="Train Too Crowded To Board">Train Too Crowded To Board</option>
+  </select> 
   <label for="locationInput"> Location: </label>
   <input id="locationInput" type="text">  
   <button>Save</button>
