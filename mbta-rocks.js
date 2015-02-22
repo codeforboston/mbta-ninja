@@ -108,10 +108,19 @@ if (Meteor.isClient) {
   Template.event.events({
     // Upvote the current event
     "click .upvote": function () {
-      Events.update(this._id, {$inc: {votes: 1}});
-			Events.update(this._id, {$set: {lastConfirmedAt: new Date()}});
+			if (!Session.get(this._id)) {
+	      Events.update(this._id, {$inc: {votes: 1}});
+				Events.update(this._id, {$set: {lastConfirmedAt: new Date()}});
+				Session.set(this._id, "upvoted")
+			} else { console.log("Cannot upvote again!") }
     }
   });
+
+	Template.event.helpers({
+		canUpvote: function() {
+		return Session.get(this._id) == null
+		}
+	});
 
   $(document).ready(function(){
     $('.modal-trigger').leanModal();

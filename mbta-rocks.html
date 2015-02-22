@@ -63,6 +63,7 @@
           <i class="mdi-device-access-time"></i>
           {{livestamp createdAt}}
         </span>
+
         <span class="event-detail event-votes">
           <i class="mdi-action-thumb-up"></i>
           {{votes}} confirmations
@@ -70,9 +71,11 @@
       </div>
     </div>
 
+    {{#if canUpvote}}
     <div class="card-action">
       <a class="waves-effect waves-light btn-flat blue white-text upvote"><i class="mdi-action-thumb-up left"></i>Confirm</a>
     </div>
+    {{/if}}
   </div>
 </template>
 
@@ -89,5 +92,3 @@
     </div>
   </div>
 </template>
-
-
