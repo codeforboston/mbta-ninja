@@ -99,12 +99,17 @@
           <i class="mdi-action-thumb-up"></i>
           {{votes}} confirmations
         </span>
+        <span class="event-detail event-votes">
+          <i class="mdi-image-tag-faces"></i>
+          {{clears}} clears
+        </span>
       </div>
     </div>
 
     {{#if canUpvote}}
     <div class="card-action">
-      <a class="waves-effect waves-light btn-flat blue white-text upvote"><i class="mdi-action-thumb-up left"></i>Confirm</a>
+      <a class="waves-effect waves-light btn-flat btn-vote blue white-text upvote"><i class="tiny mdi-action-thumb-up left"></i>Confirm</a>
+      <a class="waves-effect waves-light btn-flat btn-vote blue white-text downvote"><i class="mdi-image-tag-faces left"></i>All Clear</a>
     </div>
     {{/if}}
   </div>

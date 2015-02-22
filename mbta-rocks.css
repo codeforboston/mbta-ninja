@@ -166,3 +166,10 @@ div.lines {
   position: relative;
   overflow: hidden;
 }
+
+.btn-vote{
+  padding-left: 0.01rem;
+  padding-top: 0.01rem;
+  padding-right: 0.08rem;
+  padding-bottom: 0.01rem;
+}
