@@ -111,7 +111,7 @@ if (Meteor.isClient) {
 			if (!Session.get(this._id)) {
 	      Events.update(this._id, {$inc: {votes: 1}});
 				Events.update(this._id, {$set: {lastConfirmedAt: new Date()}});
-				Session.set(this._id, "upvoted")
+				Session.setPersistent(this._id, "upvoted")
 			} else { console.log("Cannot upvote again!") }
     }
   });
