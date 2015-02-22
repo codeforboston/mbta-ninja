@@ -77,8 +77,7 @@ if (Meteor.isClient) {
     {name: "Overcrowded train"},
     {name: "Train stopped between stations"},
     {name: "Disabled train"},
-    {name: "Medical emergency"},
-    {name: "Normal conditions"}
+    {name: "Medical emergency"}
   ]
 
   var stationsWithBetween = function () {
@@ -170,6 +169,8 @@ if (Meteor.isClient) {
 		canUpvote: function() {
   		return Session.get(this._id) == null
 		},
+		// Although this event type doesn't exist anymore, leaving this in for now in case
+		// we decide to add it back.
     positive: function(eventName) {
       return (eventName == "Normal conditions");
     }
