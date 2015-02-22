@@ -10,7 +10,7 @@ function Event(name, location, votes, createdAt, lastConfirmedAt) {
 
 Event.prototype = {
   save: function() {
-    Events.insert({
+    return Events.insert({
       name: this.name,
       location: this.location,
       votes: this.votes,
@@ -98,9 +98,11 @@ if (Meteor.isClient) {
 
       var votes = 0;
 
-      new Event(
+      newEvent = new Event(
 				name, location, votes, new Date(), new Date()
 			).save();
+			// Avoid user to upvote her own alert
+			Session.setPersistent(newEvent, "created")
       console.log(Events.find({}).fetch());
     }
   });
