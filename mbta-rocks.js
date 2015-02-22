@@ -1,10 +1,11 @@
 Events = new Mongo.Collection("events");
 
-function Event(name, location, line, votes, createdAt, lastConfirmedAt) {
+function Event(name, location, line, votes, clears, createdAt, lastConfirmedAt) {
 	this.name = name;
 	this.location = location;
   this.line = line;
 	this.votes = votes;
+	this.clears = clears;
   this.createdAt = createdAt;
 	this.lastConfirmedAt = lastConfirmedAt;
 }
@@ -30,6 +31,7 @@ Event.prototype = {
 	      location: this.location,
         line: this.line,
 	      votes: this.votes,
+	      clears: this.clears,
 	      createdAt: this.createdAt,
 				lastConfirmedAt: this.lastConfirmedAt,
 				expired: false
@@ -130,6 +132,7 @@ if (Meteor.isClient) {
       var location = locationInput.val();
 
       var votes = 0;
+      var clears = 0;
       var line = Session.get("lineBeingViewed");
 
       newEvent = new Event(
@@ -137,6 +140,7 @@ if (Meteor.isClient) {
         location,
         line,
         votes,
+        clears,
         new Date(),
         new Date()
 			).save();
@@ -152,6 +156,13 @@ if (Meteor.isClient) {
 				Events.update(this._id, {$set: {lastConfirmedAt: new Date()}});
 				Session.setPersistent(this._id, "upvoted")
 			} else { console.log("Cannot upvote again!") }
+    },
+    "click .downvote": function () {
+			if (!Session.get(this._id)) {
+	      Events.update(this._id, {$inc: {clears: 1}});
+				Events.update(this._id, {$set: {lastClearedAt: new Date()}});
+				Session.setPersistent(this._id, "downvoted")
+			} else { console.log("Cannot downvote again!") }
     }
   });
 
