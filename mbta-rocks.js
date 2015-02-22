@@ -12,22 +12,28 @@ Event.prototype = {
   save: function() {
 		var docId = Events.findOne({
 			name: this.name,
-			location: this.location
+			location: this.location,
+			expired: false
 		});
 
 		if (docId) { // Upvote
 			if (Session.get(docId._id) == null) { // Can upvote
+				// Avoid future upvotes
 				Session.setPersistent(docId._id, "upvoted");
 				return Events.update(docId._id, {$inc: {votes: 1}});
 			}
 		} else { // Create
-			return Events.insert({
+			newEvent =  Events.insert({
 	      name: this.name,
 	      location: this.location,
 	      votes: this.votes,
 	      createdAt: this.createdAt,
-				lastConfirmedAt: this.lastConfirmedAt
+				lastConfirmedAt: this.lastConfirmedAt,
+				expired: false
 	    });
+			// Avoid user to upvote her own alert
+			Session.setPersistent(newEvent, "created")
+			return newEvent;
 		}
   }
 };
@@ -90,7 +96,7 @@ if (Meteor.isClient) {
 
   Template.station.helpers({
     events: function () {
-      return Events.find({ location: this.name });
+      return Events.find({ location: this.name, expired: false });
     }
   });
 
@@ -110,11 +116,9 @@ if (Meteor.isClient) {
 
       var votes = 0;
 
-      newEvent = new Event(
+      new Event(
 				name, location, votes, new Date(), new Date()
 			).save();
-			// Avoid user to upvote her own alert
-			Session.setPersistent(newEvent, "created")
       console.log(Events.find({}).fetch());
     }
   });
@@ -143,8 +147,23 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
 	Meteor.startup(function () {
-		// Expire events after 30 minutes. Expired document collection happens
-		// every 60 seconds in MongoDB, so don't expect granularities under 1 min.
-		Events._ensureIndex({ "lastConfirmedAt": 1 }, { expireAfterSeconds: 30*60 })
 	});
+
+	SyncedCron.add({
+		name: 'Expire old events',
+		schedule: function(parser) {
+			// parser is a later.parse object
+			return parser.text('every 1 minute');
+		},
+		job: function() {
+			// Expire events older than 30 minutes
+			Events.update(
+				{lastConfirmedAt: {$gt: new Date(new Date()-30*60000)}},
+				{$set: {expired: true}},
+				{multi: true}
+			);
+		}
+	});
+
+	SyncedCron.start();
 }
