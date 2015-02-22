@@ -45,6 +45,16 @@ if (Meteor.isClient) {
     {name: "Ashmont"},
   ];
 
+  var eventTypes = [
+    {name: "Delayed train"},
+    {name: "Train too crowded to board"},
+    {name: "Overcrowded platform"},
+    {name: "Overcrowded train"},
+    {name: "Train stopped between stations"},
+    {name: "Disabled train"},
+    {name: "Medical emergency"}
+  ]
+
   var stationsWithBetween = function () {
     var result = []
     for(var i = 0; i < stations.length; i++) {
@@ -72,7 +82,8 @@ if (Meteor.isClient) {
 
   Template.createEvent.helpers({
     stations: stations,
-    stationsWithBetween: stationsWithBetween
+    stationsWithBetween: stationsWithBetween,
+    eventTypes: eventTypes
   })
 
   Template.createEvent.events({

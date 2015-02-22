@@ -29,12 +29,9 @@
       <form>
         <label for="nameInput"> Event Type: </label>
         <select id="nameInput">
-          <option value="Crowded Train">Crowded Train</option>
-          <option value="Delayed Train">Delayed Train</option>
-          <option value="Disabled Train">Disabled Train</option>
-          <option value="Medical Emergency">Medical Emergency</option>
-          <option value="Stuck Train">Stuck Train</option>
-          <option value="Train Too Crowded To Board">Train Too Crowded To Board</option>
+          {{#each eventTypes}}
+            <option value="{{name}}">{{name}}</option>
+          {{/each}}
         </select>
         <label for="locationInput"> Location: </label>
         <select id="locationInput">
