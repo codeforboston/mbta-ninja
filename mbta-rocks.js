@@ -1,10 +1,10 @@
 Events = new Mongo.Collection("events");
 
-function Event(name, location, votes){
+function Event(name, location, votes, createdAt){
 	this.name = name;
 	this.location = location;
 	this.votes = votes;
-  this.timestamp = new Date().getTime();
+  this.createdAt = createdAt;
 }
 
 Event.prototype = {
@@ -12,12 +12,14 @@ Event.prototype = {
     Events.insert({
       name: this.name,
       location: this.location,
-      votes: this.votes
+      votes: this.votes,
+      createdAt: this.createdAt
     });
   }
 };
 
 if (Meteor.isClient) {
+
   var stations = [
     {name: "Alewife"},
     {name: "Davis"},
@@ -63,12 +65,13 @@ if (Meteor.isClient) {
   });
 
   Template.station.helpers({
-    events: function (stationName) {
-      return Events.find({ location: stationName });
+    events: function () {
+      return Events.find({ location: this.name });
     }
   });
 
   Template.createEvent.helpers({
+    stations: stations,
     stationsWithBetween: stationsWithBetween
   })
 
@@ -82,7 +85,7 @@ if (Meteor.isClient) {
 
       var votes = 0;
 
-      new Event(name, location, votes).save();
+      new Event(name, location, votes, new Date().getTime()).save();
       console.log(Events.find({}).fetch());
     }
   });
@@ -92,6 +95,10 @@ if (Meteor.isClient) {
     "click .upvote": function () {
       Events.update(this._id, {$inc: {votes: 1}});
     }
+  });
+
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
   });
 }
 

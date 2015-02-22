@@ -27,39 +27,46 @@
     {{#each stations}}
       {{> station}}
     {{/each}}
-
-    <div>
-      {{> createEvent}}
-    </div>
   </div>
 
   <div class="add-button-container">
-    <a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+    <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#add-modal"><i class="mdi-content-add"></i></a>
   </div>
+
+  {{> createEvent}}
+
 </body>
 
 <template name="createEvent">
-  <label for="nameInput"> Event Type: </label>
-  <select id="nameInput">
-    <option value="Crowded Train">Crowded Train</option>
-    <option value="Delayed Train">Delayed Train</option>
-    <option value="Disabled Train">Disabled Train</option>
-    <option value="Medical Emergency">Medical Emergency</option>
-    <option value="Stuck Train">Stuck Train</option>
-    <option value="Train Too Crowded To Board">Train Too Crowded To Board</option>
-  </select>
-  <label for="locationInput"> Location: </label>
-  <select id="locationInput">
-    {{#each stationsWithBetween}}
-      <option value="{{name}}">{{name}}</option>
-    {{/each}}
-  </select>
-  <button class="submit">Save</button>
+  <div id="add-modal" class="modal">
+    <div class="modal-content">
+      <form>
+        <label for="nameInput"> Event Type: </label>
+        <select id="nameInput">
+          <option value="Crowded Train">Crowded Train</option>
+          <option value="Delayed Train">Delayed Train</option>
+          <option value="Disabled Train">Disabled Train</option>
+          <option value="Medical Emergency">Medical Emergency</option>
+          <option value="Stuck Train">Stuck Train</option>
+          <option value="Train Too Crowded To Board">Train Too Crowded To Board</option>
+        </select>
+        <label for="locationInput"> Location: </label>
+        <select id="locationInput">
+          {{#each stations}}
+            <option value="{{name}}">{{name}}</option>
+          {{/each}}
+        </select>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="waves-effect waves-green btn btn-flat blue white-text modal-action modal-close submit">Submit</a>
+    </div>
+  </div>
 </template>
 
 <template name="event">
-  <div class="events-container">
-    <div class="event">
+  <div class="event card grey lighten-5">
+    <div class="card-content">
       <div class="main-info">
         <span class="event-title">
           {{name}}
@@ -71,12 +78,17 @@
       <div class="event-details">
         <span class="event-detail event-time">
           <i class="mdi-device-access-time"></i>
-          {{livestamp timestamp}}
+          {{livestamp createdAt}}
+        </span>
+        <span class="event-detail event-votes">
+          <i class="mdi-action-thumb-up"></i>
+          {{votes}} confirmations
         </span>
       </div>
-      <div class="event-actions">
-        <a class="waves-effect waves-light btn blue upvote"><i class="mdi-action-thumb-up left"></i>{{votes}}</a>
-      </div>
+    </div>
+
+    <div class="card-action">
+      <a class="waves-effect waves-light btn-flat blue white-text upvote"><i class="mdi-action-thumb-up left"></i>Confirm</a>
     </div>
   </div>
 </template>
@@ -87,9 +99,11 @@
       <div class="white-circle"></div>
       {{name}}
     </div>
-    {{#each events name}}
-      {{> event}}
-    {{/each}}
+    <div class="events-container">
+      {{#each events name}}
+        {{> event}}
+      {{/each}}
+    </div>
   </div>
 </template>
 
