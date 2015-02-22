@@ -7,13 +7,27 @@
 </head>
 
 <body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey lighten-2">
+        <div class="col s12">
+          <a href="#!" class="brand-logo">MBTA Ninja</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="components.html">Components</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
   <div class="red-line"></div>
 
-  {{#each stations}}
-    {{> station}}
-  {{/each}}
+  <div class="main-content">
+    {{#each stations}}
+      {{> station}}
+    {{/each}}
 
-  <div class="container">
     <header>
       <h1>Event List</h1>
     </header>
@@ -26,6 +40,10 @@
     <div>
       {{> createEvent}}
     </div>
+  </div>
+
+  <div class="add-button-container">
+    <a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
   </div>
 </body>
 
@@ -76,10 +94,15 @@
             at Downtown Crossing
           </span>
         </div>
-        <div class="secondary-info">
-          <span class="event-time">
-
+        <div class="event-details">
+          <span class="event-detail event-time">
+            <i class="mdi-device-access-time"></i>
+            22 minutes ago
           </span>
+        </div>
+        <div class="event-actions">
+          <a class="waves-effect waves-light btn blue"><i class="mdi-action-thumb-up left"></i>12</a>
+          <!-- <a class="waves-effect waves-teal btn-flat">Downvote</a> -->
         </div>
       </div>
     </div>

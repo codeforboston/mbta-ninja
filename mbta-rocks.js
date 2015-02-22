@@ -39,7 +39,6 @@ if (Meteor.isClient) {
   ];
 
   var stationsWithBetween = function () {
-    console.log("here too");
     var result = []
     for(var i = 0; i < stations.length; i++) {
       result.push(stations[i]);
@@ -50,14 +49,12 @@ if (Meteor.isClient) {
         result.push(between);
       }
     }
-    console.log(result);
     return result;
   }
 
   // Get a list of all the events
   Template.body.helpers({
     events: function () {
-      console.log("here obvi");
       return Events.find({});
     },
     stations: stations
