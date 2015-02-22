@@ -158,7 +158,7 @@ if (Meteor.isServer) {
 		job: function() {
 			// Expire events older than 30 minutes
 			Events.update(
-				{lastConfirmedAt: {$gt: new Date(new Date()-30*60000)}},
+				{lastConfirmedAt: {$lt: new Date(new Date()-30*60000)}},
 				{$set: {expired: true}},
 				{multi: true}
 			);
