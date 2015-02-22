@@ -4,11 +4,16 @@ function Event(name, location, votes){
 	this.name = name;
 	this.location = location;
 	this.votes = votes;
+  this.timestamp = new Date().getTime();
 }
 
 Event.prototype = {
   save: function() {
-    Events.insert({name: this.name, location: this.location, votes: this.votes });
+    Events.insert({
+      name: this.name,
+      location: this.location,
+      votes: this.votes
+    });
   }
 };
 
@@ -54,10 +59,13 @@ if (Meteor.isClient) {
 
   // Get a list of all the events
   Template.body.helpers({
-    events: function () {
-      return Events.find({});
-    },
     stations: stations
+  });
+
+  Template.station.helpers({
+    events: function (stationName) {
+      return Events.find({ location: stationName });
+    }
   });
 
   Template.createEvent.helpers({
@@ -65,7 +73,7 @@ if (Meteor.isClient) {
   })
 
   Template.createEvent.events({
-    'click button': function() {
+    'click .submit': function() {
       var nameInput = $("#nameInput");
       var name = nameInput.val();
 
@@ -75,6 +83,7 @@ if (Meteor.isClient) {
       var votes = 0;
 
       new Event(name, location, votes).save();
+      console.log(Events.find({}).fetch());
     }
   });
 
@@ -82,10 +91,6 @@ if (Meteor.isClient) {
     // Upvote the current event
     "click .upvote": function () {
       Events.update(this._id, {$inc: {votes: 1}});
-    },
-    // Downvote the current event
-    "click .downvote": function () {
-      Events.update(this._id, {$inc: {votes: -1}});
     }
   });
 }

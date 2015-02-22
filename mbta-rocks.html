@@ -28,15 +28,6 @@
       {{> station}}
     {{/each}}
 
-    <header>
-      <h1>Event List</h1>
-    </header>
-
-    <div>
-      {{#each events}}
-        {{> event}}
-      {{/each}}
-    </div>
     <div>
       {{> createEvent}}
     </div>
@@ -46,16 +37,6 @@
     <a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
   </div>
 </body>
-
-<template name="event">
-  <ul>
-    <li>{{name}}</li>
-    <li>{{location}}</li>
-    <li>{{votes}}</li>
-  </ul>
-  <button class="upvote">Upvote</button>
-  <button class="downvote">Downvote</button>
-</template>
 
 <template name="createEvent">
   <label for="nameInput"> Event Type: </label>
@@ -69,13 +50,35 @@
   </select>
   <label for="locationInput"> Location: </label>
   <select id="locationInput">
-
     {{#each stationsWithBetween}}
-      <option value="test">{{name}}</option>
+      <option value="{{name}}">{{name}}</option>
     {{/each}}
-
   </select>
-  <button>Save</button>
+  <button class="submit">Save</button>
+</template>
+
+<template name="event">
+  <div class="events-container">
+    <div class="event">
+      <div class="main-info">
+        <span class="event-title">
+          {{name}}
+        </span>
+        <span class="event-location">
+          at {{location}}
+        </span>
+      </div>
+      <div class="event-details">
+        <span class="event-detail event-time">
+          <i class="mdi-device-access-time"></i>
+          {{livestamp timestamp}}
+        </span>
+      </div>
+      <div class="event-actions">
+        <a class="waves-effect waves-light btn blue upvote"><i class="mdi-action-thumb-up left"></i>{{votes}}</a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <template name="station">
@@ -84,27 +87,10 @@
       <div class="white-circle"></div>
       {{name}}
     </div>
-    <div class="events-container">
-      <div class="event">
-        <div class="main-info">
-          <span class="event-title">
-            Disabled train
-          </span>
-          <span class="event-location">
-            at Downtown Crossing
-          </span>
-        </div>
-        <div class="event-details">
-          <span class="event-detail event-time">
-            <i class="mdi-device-access-time"></i>
-            22 minutes ago
-          </span>
-        </div>
-        <div class="event-actions">
-          <a class="waves-effect waves-light btn blue"><i class="mdi-action-thumb-up left"></i>12</a>
-          <!-- <a class="waves-effect waves-teal btn-flat">Downvote</a> -->
-        </div>
-      </div>
-    </div>
+    {{#each events name}}
+      {{> event}}
+    {{/each}}
   </div>
 </template>
+
+
