@@ -12,14 +12,60 @@ Event.prototype = {
   }
 };
 
-
 if (Meteor.isClient) {
+  var stations = [
+    {name: "Alewife"},
+    {name: "Davis"},
+    {name: "Porter Square"},
+    {name: "Harvard Square"},
+    {name: "Central Square"},
+    {name: "Kendall"},
+    {name: "Charles/MGH"},
+    {name: "Park Street"},
+    {name: "Downtown Crossing"},
+    {name: "South Station"},
+    {name: "Broadway"},
+    {name: "Andrew"},
+    {name: "JFK/UMass"},
+    {name: "North Quincy"},
+    {name: "Wollaston"},
+    {name: "Quincy Center"},
+    {name: "Quincy Adams"},
+    {name: "Braintree"},
+    {name: "Savin Hill"},
+    {name: "Fields Corner"},
+    {name: "Shawmut"},
+    {name: "Ashmont"},
+  ];
+
+  var stationsWithBetween = function () {
+    console.log("here too");
+    var result = []
+    for(var i = 0; i < stations.length; i++) {
+      result.push(stations[i]);
+      if(i != stations.length - 1) {
+        var between = {
+          name: stations[i].name + " ~ " + stations[i+1].name
+        };
+        result.push(between);
+      }
+    }
+    console.log(result);
+    return result;
+  }
+
   // Get a list of all the events
   Template.body.helpers({
     events: function () {
+      console.log("here obvi");
       return Events.find({});
-    }
+    },
+    stations: stations
   });
+
+  Template.createEvent.helpers({
+    stationsWithBetween: stationsWithBetween
+  })
 
   Template.createEvent.events({
     'click button': function() {
@@ -33,7 +79,7 @@ if (Meteor.isClient) {
 
       new Event(name, location, votes).save();
     }
-  });  
+  });
 
   Template.event.events({
     // Upvote the current event
