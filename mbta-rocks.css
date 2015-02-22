@@ -155,6 +155,11 @@ h2.app-subtitle {
 
 div.lines {
   margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.credits {
+  font-size: 0.8em;
 }
 
 .noscroll {
