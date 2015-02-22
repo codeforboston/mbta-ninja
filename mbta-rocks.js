@@ -102,7 +102,13 @@ if (Meteor.isClient) {
       else {
         return stations.reverse();
       }
-    }
+    },
+		noEvents: function() {
+			return Events.find({
+				line: Session.get("lineBeingViewed"),
+				expired: false
+			}).count() == 0;
+		}
   });
 
   Template.station.helpers({
