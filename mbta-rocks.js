@@ -14,6 +14,7 @@ Event.prototype = {
 		var docId = Events.findOne({
 			name: this.name,
 			location: this.location,
+			line: this.line,
 			expired: false
 		});
 
