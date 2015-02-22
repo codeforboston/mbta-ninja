@@ -10,6 +10,43 @@
   z-index: -1;
 }
 
+.navbar-fixed {
+  z-index: 99;
+  height: 50px;
+}
+
+.navbar-fixed nav {
+  height: 44px;
+  line-height: 1em;
+}
+
+.nav-wrapper {
+  overflow: hidden;
+  line-height: 1em;
+}
+
+.back-button {
+  float: left;
+  overflow: hidden;
+  padding-top: 9px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.back-button img {
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.line-being-viewed {
+  margin-top: 15px;
+  margin-right: 8px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
 .main-content {
   margin-top: 20px;
 }
@@ -51,10 +88,6 @@ span.event-title {
   font-weight: bold;
   font-size: 18px;
   color: red;
-}
-
-span.event-title.positive {
-  color: green;
 }
 
 span.event-location {

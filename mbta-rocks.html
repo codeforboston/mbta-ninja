@@ -7,6 +7,23 @@
 </head>
 
 <body>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey darken-2">
+        <div class="back-button">
+          <a href="/">
+            &lt;
+            <img src="/images/ninja.png" />
+          </a>
+        </div>
+        <div class="line-being-viewed">
+          {{ lineBeingViewed }}
+        </div>
+      </div>
+    </nav>
+  </div>
+
   {{#if noEvents }}
     <div class="all-clear">
       <img class="ninja-all-clear" src="/images/ninja_all_clear.png" />
@@ -125,8 +142,8 @@
         <li>Confirm them when you see the same thing.</li>
       </ul>
       <div class="collection lines">
-        <a href="#!" class="collection-item line-selector red-text" data-line="red-line-northbound">Red Line - Northbound (to Alewife)</a>
-        <a href="#!" class="collection-item line-selector red-text" data-line="red-line-southbound">Red Line - Southbound (to Ashmont)</a>
+        <a href="#!" class="collection-item line-selector red-text" data-line="Red Line - Northbound">Red Line - Northbound (to Alewife)</a>
+        <a href="#!" class="collection-item line-selector red-text" data-line="Red Line - Southbound">Red Line - Southbound (to Ashmont)</a>
       </div>
     </div>
   </div>

@@ -108,7 +108,8 @@ if (Meteor.isClient) {
 				line: Session.get("lineBeingViewed"),
 				expired: false
 			}).count() == 0;
-		}
+		},
+    lineBeingViewed: Session.get("lineBeingViewed")
   });
 
   Template.station.helpers({
