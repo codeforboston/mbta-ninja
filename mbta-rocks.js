@@ -10,13 +10,25 @@ function Event(name, location, votes, createdAt, lastConfirmedAt) {
 
 Event.prototype = {
   save: function() {
-    return Events.insert({
-      name: this.name,
-      location: this.location,
-      votes: this.votes,
-      createdAt: this.createdAt,
-			lastConfirmedAt: this.lastConfirmedAt
-    });
+		var docId = Events.findOne({
+			name: this.name,
+			location: this.location
+		});
+
+		if (docId) { // Upvote
+			if (Session.get(docId._id) == null) { // Can upvote
+				Session.setPersistent(docId._id, "upvoted");
+				return Events.update(docId._id, {$inc: {votes: 1}});
+			}
+		} else { // Create
+			return Events.insert({
+	      name: this.name,
+	      location: this.location,
+	      votes: this.votes,
+	      createdAt: this.createdAt,
+				lastConfirmedAt: this.lastConfirmedAt
+	    });
+		}
   }
 };
 
