@@ -74,7 +74,8 @@ if (Meteor.isClient) {
     {name: "Overcrowded train"},
     {name: "Train stopped between stations"},
     {name: "Disabled train"},
-    {name: "Medical emergency"}
+    {name: "Medical emergency"},
+    {name: "Normal conditions"}
   ]
 
   var stationsWithBetween = function () {
@@ -155,8 +156,11 @@ if (Meteor.isClient) {
 
 	Template.event.helpers({
 		canUpvote: function() {
-		return Session.get(this._id) == null
-		}
+  		return Session.get(this._id) == null
+		},
+    positive: function(eventName) {
+      return (eventName == "Normal conditions");
+    }
 	});
 
   Template.introModal.events({

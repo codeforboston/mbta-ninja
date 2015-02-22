@@ -53,6 +53,10 @@ span.event-title {
   color: red;
 }
 
+span.event-title.positive {
+  color: green;
+}
+
 span.event-location {
   font-size: 12px;
   color: #aaa;

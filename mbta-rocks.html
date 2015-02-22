@@ -53,9 +53,15 @@
   <div class="event card grey lighten-5">
     <div class="card-content">
       <div class="main-info">
-        <span class="event-title">
-          {{name}}
-        </span>
+        {{#if positive name}}
+          <span class="event-title green-text">
+            {{name}}
+          </span>
+        {{else}}
+          <span class="event-title">
+            {{name}}
+          </span>
+        {{/if}}
         <span class="event-location">
           at {{location}}
         </span>
