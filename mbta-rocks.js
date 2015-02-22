@@ -1,10 +1,11 @@
 Events = new Mongo.Collection("events");
 
-function Event(name, location, votes, createdAt){
+function Event(name, location, votes, createdAt, lastConfirmedAt) {
 	this.name = name;
 	this.location = location;
 	this.votes = votes;
   this.createdAt = createdAt;
+	this.lastConfirmedAt = lastConfirmedAt;
 }
 
 Event.prototype = {
@@ -13,7 +14,8 @@ Event.prototype = {
       name: this.name,
       location: this.location,
       votes: this.votes,
-      createdAt: this.createdAt
+      createdAt: this.createdAt,
+			lastConfirmedAt: this.lastConfirmedAt
     });
   }
 };
@@ -96,7 +98,9 @@ if (Meteor.isClient) {
 
       var votes = 0;
 
-      new Event(name, location, votes, new Date().getTime()).save();
+      new Event(
+				name, location, votes, new Date(), new Date()
+			).save();
       console.log(Events.find({}).fetch());
     }
   });
@@ -105,6 +109,7 @@ if (Meteor.isClient) {
     // Upvote the current event
     "click .upvote": function () {
       Events.update(this._id, {$inc: {votes: 1}});
+			Events.update(this._id, {$set: {lastConfirmedAt: new Date()}});
     }
   });
 
@@ -114,7 +119,9 @@ if (Meteor.isClient) {
 }
 
 if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
+	Meteor.startup(function () {
+		// Expire events after 30 minutes. Expired document collection happens
+		// every 60 seconds in MongoDB, so don't expect granularities under 1 min.
+		Events._ensureIndex({ "lastConfirmedAt": 1 }, { expireAfterSeconds: 30*60 })
+	});
 }
