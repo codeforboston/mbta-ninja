@@ -1,8 +1,9 @@
 Events = new Mongo.Collection("events");
 
-function Event(name, location, votes, createdAt, lastConfirmedAt) {
+function Event(name, location, line, votes, createdAt, lastConfirmedAt) {
 	this.name = name;
 	this.location = location;
+  this.line = line;
 	this.votes = votes;
   this.createdAt = createdAt;
 	this.lastConfirmedAt = lastConfirmedAt;
@@ -26,6 +27,7 @@ Event.prototype = {
 			newEvent =  Events.insert({
 	      name: this.name,
 	      location: this.location,
+        line: this.line,
 	      votes: this.votes,
 	      createdAt: this.createdAt,
 				lastConfirmedAt: this.lastConfirmedAt,
@@ -91,12 +93,23 @@ if (Meteor.isClient) {
 
   // Get a list of all the events
   Template.body.helpers({
-    stations: stations
+    stations: function() {
+      if(Session.get("lineBeingViewed") == "red-line-southbound") {
+        return stations;
+      }
+      else {
+        return stations.reverse();
+      }
+    }
   });
 
   Template.station.helpers({
     events: function () {
-      return Events.find({ location: this.name, expired: false });
+      return Events.find({
+        location: this.name,
+        line: Session.get("lineBeingViewed"),
+        expired: false
+      });
     }
   });
 
@@ -115,9 +128,15 @@ if (Meteor.isClient) {
       var location = locationInput.val();
 
       var votes = 0;
+      var line = Session.get("lineBeingViewed");
 
-      new Event(
-				name, location, votes, new Date(), new Date()
+      newEvent = new Event(
+				name,
+        location,
+        line,
+        votes,
+        new Date(),
+        new Date()
 			).save();
       console.log(Events.find({}).fetch());
     }
@@ -140,8 +159,22 @@ if (Meteor.isClient) {
 		}
 	});
 
+  Template.introModal.events({
+    // Select a line to view
+    "click .line-selector": function (e) {
+      var selectedLine = $(e.target).attr("data-line");
+      Session.set("lineBeingViewed", selectedLine);
+      $("#intro-screen").hide();
+      $("body, html").removeClass("noscroll");
+    }
+  });
+
   $(document).ready(function(){
+    // Enable modal triggering with + button
     $('.modal-trigger').leanModal();
+
+    // prevent scrolling while intro screen is shown
+    $("body, html").addClass("noscroll");
   });
 }
 

@@ -21,6 +21,8 @@
 
   {{> createEvent}}
 
+  {{> introModal}}
+
 </body>
 
 <template name="createEvent">
@@ -89,6 +91,31 @@
       {{#each events name}}
         {{> event}}
       {{/each}}
+    </div>
+  </div>
+</template>
+
+<template name="introModal">
+  <div id="intro-screen">
+    <div class="intro-screen-content">
+      <div class="logo">
+        <img class="ninja-logo" src="/images/ninja.png" />
+      </div>
+      <h1 class="app-title">
+        MBTA Ninja
+      </h1>
+      <h2 class="app-subtitle">
+        Waze for the T
+      </h2>
+      <ul>
+        <li>No more guessing what "minor delays" means.</li>
+        <li>Get realtime updates from fellow T riders.</li>
+        <li>Confirm them when you see the same thing.</li>
+      </ul>
+      <div class="collection lines">
+        <a href="#!" class="collection-item line-selector red-text" data-line="red-line-northbound">Red Line - Northbound (to Alewife)</a>
+        <a href="#!" class="collection-item line-selector red-text" data-line="red-line-southbound">Red Line - Southbound (to Ashmont)</a>
+      </div>
     </div>
   </div>
 </template>

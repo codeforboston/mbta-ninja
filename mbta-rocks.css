@@ -80,3 +80,47 @@ span.event-detail {
 select {
   display: block;
 }
+
+#intro-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: white;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.intro-screen-content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ninja-logo {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 10px auto;
+}
+
+h1.app-title {
+  font-size: 40px;
+  margin: 0 0 5px 0;
+  line-height: 1.2em;
+}
+
+h2.app-subtitle {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  line-height: 1.2em;
+}
+
+div.lines {
+  margin-top: 15px;
+}
+
+.noscroll {
+  position: relative;
+  overflow: hidden;
+}
