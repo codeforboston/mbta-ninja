@@ -95,14 +95,7 @@ if (Meteor.isClient) {
 
   // Get a list of all the events
   Template.body.helpers({
-    stations: function() {
-      if(Session.get("lineBeingViewed") == "red-line-southbound") {
-        return stations;
-      }
-      else {
-        return stations.reverse();
-      }
-    },
+    stations: stations,
 		noEvents: function() {
 			return Events.find({
 				line: Session.get("lineBeingViewed"),
