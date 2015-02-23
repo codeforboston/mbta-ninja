@@ -137,21 +137,11 @@ select {
   display: block;
 }
 
-#intro-screen {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background-color: white;
-  top: 0;
-  left: 0;
-  padding: 10px;
-}
-
 .intro-screen-content {
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
+  padding: 10px;
 }
 
 .ninja-logo {
@@ -177,8 +167,17 @@ div.lines {
   margin-bottom: 25px;
 }
 
+.share-buttons {
+  margin-bottom: 20px;
+}
+
 .credits {
   font-size: 0.8em;
+}
+
+iframe#twitter-widget-0 {
+  vertical-align: bottom;
+  margin-left: 10px;
 }
 
 .card a.btn-vote{
