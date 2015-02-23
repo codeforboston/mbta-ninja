@@ -4,6 +4,13 @@
         content="default" />
   <meta name="viewport"
       content="user-scalable=no, width=device-width" />
+  <meta property="og:title" content="MBTA Ninja" />
+  <meta property="og:site_name" content="MBTA Ninja" />
+  <meta property="og:url" content="http://mbta.ninja" />
+  <meta property="og:type" content="product" />
+  <meta property="og:description" content="Waze for the T - crowdsourced alerts for Boston public transit. Built for Code Across Boston 2015." />
+  <meta property="og:image" content="http://www.mbta.ninja/images/ninja.png" />
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -148,6 +155,7 @@
 </template>
 
 <template name="landing">
+  <div id="fb-root"></div>
   <div id="intro-screen">
     <div class="intro-screen-content">
       <div class="logo">
@@ -162,14 +170,17 @@
       <ul>
         <li>No more guessing what "minor delays" means.</li>
         <li>Get realtime updates from fellow T riders.</li>
-        <li>Confirm them when you see the same thing.</li>
       </ul>
       <div class="collection lines">
         <a href="{{pathFor 'line.show' line='Red Line - Northbound'}}" class="collection-item line-selector red-text">Red Line - Northbound (to Alewife)</a>
         <a href="{{pathFor 'line.show' line='Red Line - Southbound'}}" class="collection-item line-selector red-text">Red Line - Southbound (to Asmt/Btree)</a>
       </div>
+      <div class="share-buttons">
+        <div class="fb-share-button" data-href="http://mbta.ninja" data-layout="button_count"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mbta.ninja" data-text="Check out MBTA Ninja - Waze for the T" data-hashtags="mbta">Tweet</a>
+      </div>
       <div class="credits">
-        Created by <a target="_blank" href="https://twitter.com/dave_lago">David Lago</a>, <a href="https://twitter.com/geoffreylitt" target="_blank">Geoffrey Litt</a>, and <a href="https://twitter.com/radhika1990">Radhika Malik</a> for the Code Across Boston 2015 hackathon.
+        Created by <a target="_blank" href="https://twitter.com/dave_lago">David Lago</a>, <a href="https://twitter.com/geoffreylitt" target="_blank">Geoffrey Litt</a>, and <a href="https://twitter.com/radhika1990" target="_blank">Radhika Malik</a> for the Code Across Boston 2015 hackathon. To request more line coverage or new features, <a href="http://twitter.com/home?status=@dave_lago @geoffreylitt @radhika1990 " target="_blank">tweet at us</a> or <a target="_blank" href="https://github.com/davidlago/mbta-ninja">contribute on Github</a>.
       </div>
     </div>
   </div>
