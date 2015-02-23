@@ -103,6 +103,12 @@ if (Meteor.isClient) {
 				expired: false
 			}).count() == 0;
 		},
+    numEvents: function() {
+      return Events.find({
+        line: Session.get("lineBeingViewed"),
+        expired: false
+      }).count()
+    },
     lineBeingViewed: Session.get("lineBeingViewed")
   });
 

@@ -47,6 +47,25 @@
   font-size: 20px;
 }
 
+.top-panel {
+  margin-left: 30px;
+  overflow: hidden;
+  max-width: 500px;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+img.top-panel-ninja {
+  height: 50px;
+  float: left;
+}
+
+.top-panel-text {
+  float: left;
+  margin-top: 14px;
+  font-size: 18px;
+}
+
 .main-content {
   margin-top: 20px;
 }
