@@ -16,7 +16,9 @@
 </head>
 
 <body>
+</body>
 
+<template name="main">
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper grey darken-2">
@@ -62,10 +64,7 @@
   </div>
 
   {{> createEvent}}
-
-  {{> introModal}}
-
-</body>
+</template>
 
 <template name="createEvent">
   <div id="add-modal" class="modal">
@@ -148,7 +147,7 @@
   </div>
 </template>
 
-<template name="introModal">
+<template name="landing">
   <div id="intro-screen">
     <div class="intro-screen-content">
       <div class="logo">
@@ -166,8 +165,8 @@
         <li>Confirm them when you see the same thing.</li>
       </ul>
       <div class="collection lines">
-        <a href="#!" class="collection-item line-selector red-text" data-line="Red Line - Northbound">Red Line - Northbound (to Alewife)</a>
-        <a href="#!" class="collection-item line-selector red-text" data-line="Red Line - Southbound">Red Line - Southbound (to Ashmont)</a>
+        <a href="{{pathFor 'line.show' line='Red Line - Northbound'}}" class="collection-item line-selector red-text">Red Line - Northbound (to Alewife)</a>
+        <a href="{{pathFor 'line.show' line='Red Line - Southbound'}}" class="collection-item line-selector red-text">Red Line - Southbound (to Asmt/Btree)</a>
       </div>
       <div class="credits">
         Created by <a target="_blank" href="https://twitter.com/dave_lago">David Lago</a>, <a href="https://twitter.com/geoffreylitt" target="_blank">Geoffrey Litt</a>, and <a href="https://twitter.com/radhika1990">Radhika Malik</a> for the Code Across Boston 2015 hackathon.

@@ -181,11 +181,6 @@ div.lines {
   font-size: 0.8em;
 }
 
-.noscroll {
-  position: relative;
-  overflow: hidden;
-}
-
 .card a.btn-vote{
   padding-left: 0.5rem;
   padding-top: 0.01rem;
