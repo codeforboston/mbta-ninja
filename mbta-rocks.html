@@ -34,8 +34,18 @@
   </div>
 
   {{#if noEvents }}
-    <div class="all-clear">
-      <img class="ninja-all-clear" src="/images/ninja_all_clear.png" />
+    <div class="top-panel card-panel green white-text">
+      <img src="/images/ninja.png" class="top-panel-ninja" />
+      <div class="top-panel-text">
+        All clear right now!
+      </div>
+    </div>
+  {{else}}
+    <div class="top-panel card-panel red white-text">
+      <img src="/images/ninja.png" class="top-panel-ninja" />
+      <div class="top-panel-text">
+        {{numEvents}} incidents reported.
+      </div>
     </div>
   {{/if}}
 
