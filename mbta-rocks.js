@@ -43,6 +43,17 @@ Event.prototype = {
   }
 };
 
+Router.route("/", function () {
+  this.render("landing");
+});
+
+Router.route('/lines/:line', function () {
+  this.render("main");
+},
+{
+  name: 'line.show'
+});
+
 if (Meteor.isClient) {
 
   var stations = [
@@ -94,29 +105,40 @@ if (Meteor.isClient) {
     return result;
   }
 
+  var lineBeingViewed = function () {
+    return Router.current().params.line;
+  }
+
   // Get a list of all the events
-  Template.body.helpers({
+  Template.main.helpers({
     stations: stations,
 		noEvents: function() {
 			return Events.find({
-				line: Session.get("lineBeingViewed"),
+				line: lineBeingViewed(),
 				expired: false
 			}).count() == 0;
 		},
     numEvents: function() {
       return Events.find({
-        line: Session.get("lineBeingViewed"),
+        line: lineBeingViewed(),
         expired: false
       }).count()
     },
-    lineBeingViewed: Session.get("lineBeingViewed")
+    lineBeingViewed: function() {
+      return lineBeingViewed();
+    }
   });
+
+  Template.main.rendered = function () {
+    // Enable modal triggering with + button
+    $('.modal-trigger').leanModal();
+  };
 
   Template.station.helpers({
     events: function () {
       return Events.find({
         location: this.name,
-        line: Session.get("lineBeingViewed"),
+        line: lineBeingViewed(),
         expired: false
       });
     }
@@ -138,7 +160,7 @@ if (Meteor.isClient) {
 
       var votes = 0;
       var clears = 0;
-      var line = Session.get("lineBeingViewed");
+      var line = lineBeingViewed();
 
       newEvent = new Event(
 				name,
@@ -181,24 +203,6 @@ if (Meteor.isClient) {
       return (eventName == "Normal conditions");
     }
 	});
-
-  Template.introModal.events({
-    // Select a line to view
-    "click .line-selector": function (e) {
-      var selectedLine = $(e.target).attr("data-line");
-      Session.set("lineBeingViewed", selectedLine);
-      $("#intro-screen").hide();
-      $("body, html").removeClass("noscroll");
-    }
-  });
-
-  $(document).ready(function(){
-    // Enable modal triggering with + button
-    $('.modal-trigger').leanModal();
-
-    // prevent scrolling while intro screen is shown
-    $("body, html").addClass("noscroll");
-  });
 }
 
 if (Meteor.isServer) {
