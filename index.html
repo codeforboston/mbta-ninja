@@ -36,13 +36,13 @@
           </a>
         </div>
         <div class="line-being-viewed">
-          {{ lineBeingViewed }}
+          {{ currentLine }}
         </div>
       </div>
     </nav>
   </div>
 
-  {{#if noEvents }}
+  {{#if noReports }}
     <div class="top-panel card-panel green white-text">
       <img src="/images/ninja.png" class="top-panel-ninja" />
       <div class="top-panel-text">
@@ -53,7 +53,7 @@
     <div class="top-panel card-panel red white-text">
       <img src="/images/ninja.png" class="top-panel-ninja" />
       <div class="top-panel-text">
-        {{numEvents}} incidents reported.
+        {{numReports}} incidents reported.
       </div>
     </div>
   {{/if}}
@@ -70,16 +70,16 @@
     <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#add-modal"><i class="mdi-content-add"></i></a>
   </div>
 
-  {{> createEvent}}
+  {{> createReport}}
 </template>
 
-<template name="createEvent">
+<template name="createReport">
   <div id="add-modal" class="modal">
     <div class="modal-content">
       <form>
-        <label for="nameInput"> Event Type: </label>
+        <label for="nameInput"> Report Type: </label>
         <select id="nameInput">
-          {{#each eventTypes}}
+          {{#each reportTypes}}
             <option value="{{name}}">{{name}}</option>
           {{/each}}
         </select>
@@ -97,34 +97,34 @@
   </div>
 </template>
 
-<template name="event">
-  <div class="event card grey lighten-5">
+<template name="report">
+  <div class="report card grey lighten-5">
     <div class="card-content">
       <div class="main-info">
         {{#if positive name}}
-          <span class="event-title green-text">
+          <span class="report-title green-text">
             {{name}}
           </span>
         {{else}}
-          <span class="event-title">
+          <span class="report-title">
             {{name}}
           </span>
         {{/if}}
-        <span class="event-location">
+        <span class="report-location">
           at {{location}}
         </span>
       </div>
-      <div class="event-details">
-        <span class="event-detail event-time">
+      <div class="report-details">
+        <span class="report-detail report-time">
           <i class="mdi-device-access-time"></i>
           {{livestamp createdAt}}
         </span>
 
-        <span class="event-detail event-votes">
+        <span class="report-detail report-votes">
           <i class="mdi-action-thumb-up"></i>
           {{votes}} confirmations
         </span>
-        <span class="event-detail event-votes">
+        <span class="report-detail report-votes">
           <i class="mdi-image-tag-faces"></i>
           {{clears}} clears
         </span>
@@ -146,9 +146,9 @@
       <div class="white-circle"></div>
       {{name}}
     </div>
-    <div class="events-container">
-      {{#each events name}}
-        {{> event}}
+    <div class="reports-container">
+      {{#each reports name}}
+        {{> report}}
       {{/each}}
     </div>
   </div>
