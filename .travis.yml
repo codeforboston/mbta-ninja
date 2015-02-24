@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - "0.10"
+
+services:
+  - mongodb
+
+before_install:
+  # install meteor
+  - "curl https://install.meteor.com | /bin/sh"
+
+script: meteor --test
