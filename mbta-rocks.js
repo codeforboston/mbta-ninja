@@ -106,25 +106,25 @@ if (Meteor.isClient) {
     return result;
   }
 
-  var lineBeingViewed = function () {
+  // Main event helpers
+	var lineBeingViewed = function () {
     return Router.current().params.line;
   }
-
-  // Get a list of all the events
+	var numEvents = function(line) {
+		return Events.find({
+			line: lineBeingViewed(),
+			name: {$ne: "Normal conditions"},
+			expired: false
+		}).count()
+	}
   Template.main.helpers({
     stations: stations,
 		noEvents: function() {
-			return Events.find({
-				line: lineBeingViewed(),
-				expired: false
-			}).count() == 0;
+			return numEvents(lineBeingViewed()) == 0;
 		},
     numEvents: function() {
-      return Events.find({
-        line: lineBeingViewed(),
-        expired: false
-      }).count()
-    },
+      return numEvents(lineBeingViewed());
+		},
     lineBeingViewed: function() {
       return lineBeingViewed();
     }
