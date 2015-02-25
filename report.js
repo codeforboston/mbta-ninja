@@ -65,30 +65,286 @@ if (Meteor.isClient) {
     {name: 'Normal conditions'}
   ];
 
-  var stations = [
-    {name: 'Alewife'},
-    {name: 'Davis'},
-    {name: 'Porter Square'},
-    {name: 'Harvard Square'},
-    {name: 'Central Square'},
-    {name: 'Kendall'},
-    {name: 'Charles/MGH'},
-    {name: 'Park Street'},
-    {name: 'Downtown Crossing'},
-    {name: 'South Station'},
-    {name: 'Broadway'},
-    {name: 'Andrew'},
-    {name: 'JFK/UMass'},
-    {name: 'North Quincy'},
-    {name: 'Wollaston'},
-    {name: 'Quincy Center'},
-    {name: 'Quincy Adams'},
-    {name: 'Braintree'},
-    {name: 'Savin Hill'},
-    {name: 'Fields Corner'},
-    {name: 'Shawmut'},
-    {name: 'Ashmont'}
-  ];
+  var stations = {
+    "Red Line - Northbound": [
+      {name: 'Alewife'},
+      {name: 'Davis'},
+      {name: 'Porter Square'},
+      {name: 'Harvard Square'},
+      {name: 'Central Square'},
+      {name: 'Kendall'},
+      {name: 'Charles/MGH'},
+      {name: 'Park Street'},
+      {name: 'Downtown Crossing'},
+      {name: 'South Station'},
+      {name: 'Broadway'},
+      {name: 'Andrew'},
+      {name: 'JFK/UMass'},
+      {name: 'North Quincy'},
+      {name: 'Wollaston'},
+      {name: 'Quincy Center'},
+      {name: 'Quincy Adams'},
+      {name: 'Braintree'},
+      {name: 'Savin Hill'},
+      {name: 'Fields Corner'},
+      {name: 'Shawmut'},
+      {name: 'Ashmont'}
+    ],
+    "Red Line - Southbound": [
+      {name: 'Alewife'},
+      {name: 'Davis'},
+      {name: 'Porter Square'},
+      {name: 'Harvard Square'},
+      {name: 'Central Square'},
+      {name: 'Kendall'},
+      {name: 'Charles/MGH'},
+      {name: 'Park Street'},
+      {name: 'Downtown Crossing'},
+      {name: 'South Station'},
+      {name: 'Broadway'},
+      {name: 'Andrew'},
+      {name: 'JFK/UMass'},
+      {name: 'North Quincy'},
+      {name: 'Wollaston'},
+      {name: 'Quincy Center'},
+      {name: 'Quincy Adams'},
+      {name: 'Braintree'},
+      {name: 'Savin Hill'},
+      {name: 'Fields Corner'},
+      {name: 'Shawmut'},
+      {name: 'Ashmont'}
+    ],
+    "Orange Line - Northbound": [
+      {name: "Oak Grove"},
+      {name: "Malden Center"},
+      {name: "Wellington"},
+      {name: "Assembly"},
+      {name: "Sullivan Square"},
+      {name: "Community College"},
+      {name: "North Station"},
+      {name: "Haymarket"},
+      {name: "State Street"},
+      {name: "Downtown Crossing"},
+      {name: "Chinatown"},
+      {name: "Tufts Medical Center"},
+      {name: "Back Bay"},
+      {name: "Massachusetts Ave."},
+      {name: "Ruggles"},
+      {name: "Roxbury Crossing"},
+      {name: "Jackson Square"},
+      {name: "Stony Brook"},
+      {name: "Green Street"},
+      {name: "Forest Hills"}
+    ],
+    "Orange Line - Southbound": [
+      {name: "Oak Grove"},
+      {name: "Malden Center"},
+      {name: "Wellington"},
+      {name: "Assembly"},
+      {name: "Sullivan Square"},
+      {name: "Community College"},
+      {name: "North Station"},
+      {name: "Haymarket"},
+      {name: "State Street"},
+      {name: "Downtown Crossing"},
+      {name: "Chinatown"},
+      {name: "Tufts Medical Center"},
+      {name: "Back Bay"},
+      {name: "Massachusetts Ave."},
+      {name: "Ruggles"},
+      {name: "Roxbury Crossing"},
+      {name: "Jackson Square"},
+      {name: "Stony Brook"},
+      {name: "Green Street"},
+      {name: "Forest Hills"}
+    ],
+    "Green Line B - Westbound": [
+      {name: "Lechmere"},
+      {name: "Science Park"},
+      {name: "North Station"},
+      {name: "Haymarket"},
+      {name: "Park Street"},
+      {name: "Boylston"},
+      {name: "Arlington"},
+      {name: "Copley"},
+      {name: "Hynes Convention Center"},
+      {name: "Kenmore"},
+      {name: "Blandford Street"},
+      {name: "Boston Univ. East"},
+      {name: "Boston Univ. Central"},
+      {name: "Boston Univ. West"},
+      {name: "Saint Paul Street"},
+      {name: "Pleasant Street"},
+      {name: "Babcock Street"},
+      {name: "Packards Corner"},
+      {name: "Harvard Ave."},
+      {name: "Griggs Street"},
+      {name: "Allston Street"},
+      {name: "Warren Street"},
+      {name: "Washington Street"},
+      {name: "Sutherland Road"},
+      {name: "Chiswick Road"},
+      {name: "Chestnut Hill Ave."},
+      {name: "South Street"},
+      {name: "Boston College"}
+    ],
+    "Green Line B - Eastbound": [
+      {name: "Lechmere"},
+      {name: "Science Park"},
+      {name: "North Station"},
+      {name: "Haymarket"},
+      {name: "Park Street"},
+      {name: "Boylston"},
+      {name: "Arlington"},
+      {name: "Copley"},
+      {name: "Hynes Convention Center"},
+      {name: "Kenmore"},
+      {name: "Blandford Street"},
+      {name: "Boston Univ. East"},
+      {name: "Boston Univ. Central"},
+      {name: "Boston Univ. West"},
+      {name: "Saint Paul Street"},
+      {name: "Pleasant Street"},
+      {name: "Babcock Street"},
+      {name: "Packards Corner"},
+      {name: "Harvard Ave."},
+      {name: "Griggs Street"},
+      {name: "Allston Street"},
+      {name: "Warren Street"},
+      {name: "Washington Street"},
+      {name: "Sutherland Road"},
+      {name: "Chiswick Road"},
+      {name: "Chestnut Hill Ave."},
+      {name: "South Street"},
+      {name: "Boston College"}
+    ],
+    "Green Line C - Westbound": [
+      {name: "North Station"},
+      {name: "Haymarket"},
+      {name: "Park Street"},
+      {name: "Boylston"},
+      {name: "Arlington"},
+      {name: "Copley"},
+      {name: "Hynes Convention Center"},
+      {name: "Kenmore"},
+      {name: "Saint Mary Street"},
+      {name: "Hawes Street"},
+      {name: "Kent Street"},
+      {name: "Saint Paul Street"},
+      {name: "Coolidge Corner"},
+      {name: "Summit Ave."},
+      {name: "Brandon Hall"},
+      {name: "Fairbanks Street"},
+      {name: "Washington Square"},
+      {name: "Tappan Street"},
+      {name: "Dean Road"},
+      {name: "Englewood Ave."},
+      {name: "Cleveland Circle"}
+    ],
+    "Green Line C - Eastbound": [
+      {name: "North Station"},
+      {name: "Haymarket"},
+      {name: "Park Street"},
+      {name: "Boylston"},
+      {name: "Arlington"},
+      {name: "Copley"},
+      {name: "Hynes Convention Center"},
+      {name: "Kenmore"},
+      {name: "Saint Mary Street"},
+      {name: "Hawes Street"},
+      {name: "Kent Street"},
+      {name: "Saint Paul Street"},
+      {name: "Coolidge Corner"},
+      {name: "Summit Ave."},
+      {name: "Brandon Hall"},
+      {name: "Fairbanks Street"},
+      {name: "Washington Square"},
+      {name: "Tappan Street"},
+      {name: "Dean Road"},
+      {name: "Englewood Ave."},
+      {name: "Cleveland Circle"}
+    ],
+    "Green Line D - Westbound": [
+      {name: "North Station"},
+      {name: "Haymarket"},
+      {name: "Park Street"},
+      {name: "Boylston"},
+      {name: "Arlington"},
+      {name: "Copley"},
+      {name: "Hynes Convention Center"},
+      {name: "Kenmore"},
+      {name: "Fenway"},
+      {name: "Longwood"},
+      {name: "Brookline Village"},
+      {name: "Brookline Hills"},
+      {name: "Beaconsfield"},
+      {name: "Reservoir"},
+      {name: "Chestnut Hill"},
+      {name: "Newton Centre"},
+      {name: "Newton Highlands"},
+      {name: "Eliot"},
+      {name: "Waban"},
+      {name: "Woodland"},
+      {name: "Riverside"}
+    ],
+    "Green Line D - Eastbound": [
+      {name: "North Station"},
+      {name: "Haymarket"},
+      {name: "Park Street"},
+      {name: "Boylston"},
+      {name: "Arlington"},
+      {name: "Copley"},
+      {name: "Hynes Convention Center"},
+      {name: "Kenmore"},
+      {name: "Fenway"},
+      {name: "Longwood"},
+      {name: "Brookline Village"},
+      {name: "Brookline Hills"},
+      {name: "Beaconsfield"},
+      {name: "Reservoir"},
+      {name: "Chestnut Hill"},
+      {name: "Newton Centre"},
+      {name: "Newton Highlands"},
+      {name: "Eliot"},
+      {name: "Waban"},
+      {name: "Woodland"},
+      {name: "Riverside"}
+    ],
+    "Green Line E - Westbound": [
+      {name: "Park Street"},
+      {name: "Boylston"},
+      {name: "Arlington"},
+      {name: "Copley"},
+      {name: "Prudential"},
+      {name: "Symphony"},
+      {name: "Northeastern University"},
+      {name: "Museum of Fine Arts"},
+      {name: "Longwood Medical Area"},
+      {name: "Brigham Circle"},
+      {name: "Fenwood Road"},
+      {name: "Mission Park"},
+      {name: "Riverway"},
+      {name: "Back of the Hill"},
+      {name: "Heath Street"}
+    ],
+    "Green Line E - Eastbound": [
+      {name: "Park Street"},
+      {name: "Boylston"},
+      {name: "Arlington"},
+      {name: "Copley"},
+      {name: "Prudential"},
+      {name: "Symphony"},
+      {name: "Northeastern University"},
+      {name: "Museum of Fine Arts"},
+      {name: "Longwood Medical Area"},
+      {name: "Brigham Circle"},
+      {name: "Fenwood Road"},
+      {name: "Mission Park"},
+      {name: "Riverway"},
+      {name: "Back of the Hill"},
+      {name: "Heath Street"}
+    ]
+  };
 
   // HELPERS
   var numReports = function(line) {
@@ -99,18 +355,43 @@ if (Meteor.isClient) {
     }).count();
   };
 
+  var currentLine = function() {
+    return Router.current().params.line;
+  };
+
+  var currentStations = function () {
+    return stations[currentLine()];
+  }
+
   Template.main.helpers({
     noReports: function() {
       return numReports(currentLine()) === 0;
     },
     numReports: function() {
       return numReports(currentLine());
+    },
+    lineColor: function() {
+      var line = currentLine();
+      var lineColor = ""
+
+      if(line.indexOf("Red") > -1) {
+        lineColor = "red-line";
+      }
+      else if(line.indexOf("Green") > -1) {
+        lineColor = "green-line";
+      }
+      else if(line.indexOf("Orange") > -1) {
+        lineColor = "orange-line";
+      }
+
+      return lineColor;
     }
   });
 
   Template.createReport.helpers({
-    stations: stations,
-    stationsWithBetween: stationsWithBetween,
+    stations: function () {
+      return currentStations();
+    },
     reportTypes: reportTypes
   });
 
@@ -124,26 +405,10 @@ if (Meteor.isClient) {
     }
   });
 
-  var stationsWithBetween = function() {
-    var result = [];
-    for (var i = 0; i < stations.length; i++) {
-      result.push(stations[i]);
-      if (i != stations.length - 1) {
-        var between = {
-          name: stations[i].name + ' ~ ' + stations[i + 1].name
-        };
-        result.push(between);
-      }
-    }
-    return result;
-  };
-
-  var currentLine = function() {
-    return Router.current().params.line;
-  };
-
   Template.main.helpers({
-    stations: stations,
+    stations: function () {
+      return currentStations();
+    },
     currentLine: function() {
       return currentLine();
     }
