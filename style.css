@@ -21,6 +21,10 @@
   background-color: green;
 }
 
+.blue-line {
+  background-color: blue;
+}
+
 .navbar-fixed {
   z-index: 99;
   height: 50px;
