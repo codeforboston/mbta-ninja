@@ -46,14 +46,16 @@
     <div class="top-panel card-panel green white-text">
       <img src="/images/ninja.png" class="top-panel-ninja" />
       <div class="top-panel-text">
-        All clear right now!
+        All clear at
+        <span id="current-time"></span>
       </div>
     </div>
   {{else}}
     <div class="top-panel card-panel red white-text">
       <img src="/images/ninja.png" class="top-panel-ninja" />
       <div class="top-panel-text">
-        {{numReports}} incidents reported.
+        {{numReports}} incidents at
+        <span id="current-time"></span>
       </div>
     </div>
   {{/if}}
