@@ -2,6 +2,11 @@ if (Meteor.isClient) {
   Template.main.rendered = function() {
     // Enable modal triggering with + button
     $('.modal-trigger').leanModal();
+
+    setInterval(function(){
+      var currentTime = moment().format("hh:mm:ss");
+      $('#current-time').text(currentTime);
+    }, 1000);
   };
 
   // SHARE BUTTONS
