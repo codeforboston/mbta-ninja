@@ -9,6 +9,17 @@ if (Meteor.isClient) {
     }, 1000);
   };
 
+  Template.report.rendered = function() {
+    // Enable modal triggering with button on a "Normal conditions" event.
+    $('.modal-trigger').leanModal();
+  };
+
+  Template.report.events({
+    'click .modal-trigger': function(e) { 
+      $('#locationInput').val(this.location);
+    }
+  });
+
   // SHARE BUTTONS
   Template.landing.rendered = function() {
     // Twitter button script
