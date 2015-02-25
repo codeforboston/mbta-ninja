@@ -12,3 +12,7 @@ The site is built using Meteor.js and Materialize.css, and deployed on Heroku.
 We welcome contributions that would make this tool more useful for the Boston community -- whether it's adding support for more MBTA lines, or entire new features.
 
 Please create a GitHub issue if you have an idea. And if you're able to code a solution and open a pull request, even better!
+
+# License
+
+MBTA Ninja is released under the [MIT License](http://www.opensource.org/licenses/MIT)
