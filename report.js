@@ -1,6 +1,11 @@
 Reports = new Mongo.Collection('reports');
 
-function Report(name, location, line, votes, clears, createdAt, lastConfirmedAt) {
+// Decay variables
+var initialWeight = 20;
+var upvoteWeight = 10;
+var downvoteWeight = -5;
+
+function Report(name, location, line, votes, clears, createdAt, lastConfirmedAt, expired, weight) {
   this.name = name;
   this.location = location;
   this.line = line;
@@ -8,6 +13,8 @@ function Report(name, location, line, votes, clears, createdAt, lastConfirmedAt)
   this.clears = clears;
   this.createdAt = createdAt;
   this.lastConfirmedAt = lastConfirmedAt;
+  this.expired = expired;
+  this.weight = weight;
 }
 
 Report.prototype = {
@@ -23,18 +30,21 @@ Report.prototype = {
       if (Session.get(docId._id) == null) { // Can upvote
         // Avoid future upvotes
         Session.setPersistent(docId._id, 'upvoted');
-        return Reports.update(docId._id, {$inc: {votes: 1}});
+        Reports.update(docId._id, {$inc: {votes: 1}});
+        Reports.update(docId._id, {$inc: {weight: upvoteWeight}});
+        return Reports.update(docId._id, {$set: {lastConfirmedAt: new Date()}});
       }
     } else { // Create
       var newReport =  Reports.insert({
         name: this.name,
         location: this.location,
         line: this.line,
-        votes: this.votes,
-        clears: this.clears,
-        createdAt: this.createdAt,
-        lastConfirmedAt: this.lastConfirmedAt,
-        expired: false
+        votes: 0,
+        clears: 0,
+        createdAt: new Date(),
+        lastConfirmedAt: new Date(),
+        expired: false,
+        weight: initialWeight
       });
       // Avoid user to upvote her own report
       Session.setPersistent(newReport, 'created');
@@ -157,21 +167,43 @@ if (Meteor.isClient) {
 
       var locationInput = $('#locationInput');
       var location = locationInput.val();
-
-      var votes = 0;
-      var clears = 0;
       var line = currentLine();
 
       newReport = new Report(
         name,
         location,
         line,
-        votes,
-        clears,
-        new Date(),
-        new Date()
+        0, // Votes
+        0, // Clears
+        new Date(), // Created
+        new Date(), // Updated
+        false, // Expired
+        initialWeight
       ).save();
-      console.log(Reports.find({}).fetch());
+
+
+      if (name === 'Normal conditions') {
+        // Normal conditions expire all alerts
+        alert_reports = Reports.find({
+          line: line,
+          location: location,
+          name: {$ne: 'Normal conditions'},
+          expired: false
+        }).forEach(function(alert_report) {
+          Reports.update(alert_report._id, {$set: {expired: true}});
+        })
+      } else {
+        // Any alert expires normal conditions
+        // We have to search first, cannot run mass update in untrusted code
+        nc_report = Reports.findOne({
+          line: line,
+          location: location,
+          name: 'Normal conditions',
+          expired: false
+        });
+        if (nc_report)
+          Reports.update(nc_report._id, {$set: {expired: true}});
+      }
     }
   });
 
@@ -179,17 +211,19 @@ if (Meteor.isClient) {
     // Upvote the current event
     'click .upvote': function() {
       if (!Session.get(this._id)) {
-        Reports.update(this._id, {$inc: {votes: 1}});
-        Reports.update(this._id, {$set: {lastConfirmedAt: new Date()}});
         Session.setPersistent(this._id, 'upvoted');
-      } else { console.log('Cannot upvote again!'); }
+        Reports.update(this._id, {$inc: {votes: 1}});
+        Reports.update(this._id, {$inc: {weight: upvoteWeight}});
+        Reports.update(this._id, {$set: {lastConfirmedAt: new Date()}});
+      }
     },
     'click .downvote': function() {
       if (!Session.get(this._id)) {
         Reports.update(this._id, {$inc: {clears: 1}});
         Reports.update(this._id, {$set: {lastClearedAt: new Date()}});
+        Reports.update(this._id, {$inc: {weight: downvoteWeight}});
         Session.setPersistent(this._id, 'downvoted');
-      } else { console.log('Cannot downvote again!'); }
+      }
     }
   });
 }
