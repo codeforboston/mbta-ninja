@@ -4,6 +4,7 @@ Reports = new Mongo.Collection('reports');
 var initialWeight = 20;
 var upvoteWeight = 10;
 var downvoteWeight = -5;
+var maxWeight = 20;
 
 function Report(name, location, line, votes, clears, createdAt, lastConfirmedAt, expired, weight) {
   this.name = name;
@@ -31,8 +32,12 @@ Report.prototype = {
         // Avoid future upvotes
         Session.setPersistent(docId._id, 'upvoted');
         Reports.update(docId._id, {$inc: {votes: 1}});
-        Reports.update(docId._id, {$inc: {weight: upvoteWeight}});
-        return Reports.update(docId._id, {$set: {lastConfirmedAt: new Date()}});
+        // Cap weight to maxWeight
+        var newWeight = docId.weight + upvoteWeight;
+        if (newWeight > maxWeight)
+          newWeight = maxWeight;
+        return Reports.update(docId._id,
+          {$set: {weight: newWeight, lastConfirmedAt: new Date()}});
       }
     } else { // Create
       var newReport =  Reports.insert({
@@ -478,8 +483,12 @@ if (Meteor.isClient) {
       if (!Session.get(this._id)) {
         Session.setPersistent(this._id, 'upvoted');
         Reports.update(this._id, {$inc: {votes: 1}});
-        Reports.update(this._id, {$inc: {weight: upvoteWeight}});
-        Reports.update(this._id, {$set: {lastConfirmedAt: new Date()}});
+        // Cap weight to maxWeight
+        var newWeight = this.weight + upvoteWeight;
+        if (newWeight > maxWeight)
+          newWeight = maxWeight;
+        Reports.update(this._id,
+          {$set: {weight: newWeight, lastConfirmedAt: new Date()}});
       }
     },
     'click .downvote': function() {
