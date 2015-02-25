@@ -1,13 +1,24 @@
 /* CSS declarations go here */
 
-.red-line {
+.line-background {
   position: fixed;
   width: 10px;
   height: 100%;
   top: 0;
   left: 15px;
-  background-color: red;
   z-index: -1;
+}
+
+.red-line {
+  background-color: red;
+}
+
+.orange-line {
+  background-color: orange;
+}
+
+.green-line {
+  background-color: green;
 }
 
 .navbar-fixed {
