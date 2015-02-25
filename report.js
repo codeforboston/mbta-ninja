@@ -163,6 +163,32 @@ if (Meteor.isClient) {
       {name: "Green Street"},
       {name: "Forest Hills"}
     ],
+    "Blue Line - Northbound": [
+      {name: 'Wonderland'},
+      {name: 'Revere Beach'},
+      {name: 'Beachmont'},
+      {name: 'Suffolk Downs'},
+      {name: 'Orient Heights'},
+      {name: 'Wood Island'},
+      {name: 'Airport'},
+      {name: 'Maverick'},
+      {name: 'Aquarium'},
+      {name: 'State'},
+      {name: 'Bowdoin'}
+    ],
+    "Blue Line - Southbound": [
+      {name: 'Wonderland'},
+      {name: 'Revere Beach'},
+      {name: 'Beachmont'},
+      {name: 'Suffolk Downs'},
+      {name: 'Orient Heights'},
+      {name: 'Wood Island'},
+      {name: 'Airport'},
+      {name: 'Maverick'},
+      {name: 'Aquarium'},
+      {name: 'State'},
+      {name: 'Bowdoin'}
+    ],
     "Green Line B - Westbound": [
       {name: "Lechmere"},
       {name: "Science Park"},
@@ -387,6 +413,9 @@ if (Meteor.isClient) {
       }
       else if(line.indexOf("Orange") > -1) {
         lineColor = "orange-line";
+      }
+      else if(line.indexOf("Blue") > -1) {
+        lineColor = "blue-line";
       }
 
       return lineColor;
