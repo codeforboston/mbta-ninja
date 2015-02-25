@@ -58,7 +58,7 @@
     </div>
   {{/if}}
 
-  <div class="red-line"></div>
+  <div class="line-background {{ lineColor }}"></div>
 
   <div class="main-content">
     {{#each stations}}
@@ -174,7 +174,18 @@
       </ul>
       <div class="collection lines">
         <a href="{{pathFor 'line.show' line='Red Line - Northbound'}}" class="collection-item line-selector red-text">Red Line - Northbound (to Alewife)</a>
-        <a href="{{pathFor 'line.show' line='Red Line - Southbound'}}" class="collection-item line-selector red-text">Red Line - Southbound (to Asmt/Btree)</a>
+        <a href="{{pathFor 'line.show' line='Red Line - Southbound'}}" class="collection-item line-selector red-text">Red Line - Southbound (to Ashmont/Braintree)</a>
+        <a href="{{pathFor 'line.show' line='Orange Line - Northbound'}}" class="collection-item line-selector orange-text">Orange Line - Northbound (to Oak Grove)</a>
+        <a href="{{pathFor 'line.show' line='Orange Line - Southbound'}}" class="collection-item line-selector orange-text">Orange Line - Southbound (to Forest Hills)</a>
+        <a href="{{pathFor 'line.show' line='Green Line B - Westbound'}}" class="collection-item line-selector green-text">Green Line B - Westbound (to Boston College)</a>
+        <a href="{{pathFor 'line.show' line='Green Line B - Eastbound'}}" class="collection-item line-selector green-text">Green Line B - Eastbound (to Lechmere)</a>
+        <a href="{{pathFor 'line.show' line='Green Line C - Westbound'}}" class="collection-item line-selector green-text">Green Line C - Westbound (to Cleveland Circle)</a>
+        <a href="{{pathFor 'line.show' line='Green Line C - Eastbound'}}" class="collection-item line-selector green-text">Green Line C - Eastbound (to North Station)</a>
+        <a href="{{pathFor 'line.show' line='Green Line D - Westbound'}}" class="collection-item line-selector green-text">Green Line D - Westbound (to Riverside)</a>
+        <a href="{{pathFor 'line.show' line='Green Line D - Eastbound'}}" class="collection-item line-selector green-text">Green Line D - Eastbound (to North Station)</a>
+        <a href="{{pathFor 'line.show' line='Green Line E - Westbound'}}" class="collection-item line-selector green-text">Green Line E - Westbound (to Heath St)</a>
+        <a href="{{pathFor 'line.show' line='Green Line E - Eastbound'}}" class="collection-item line-selector green-text">Green Line E - Eastbound (to Park St)</a>
+
       </div>
       <div class="share-buttons">
         <div class="fb-share-button" data-href="http://mbta.ninja" data-layout="button_count"></div>
