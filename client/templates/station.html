@@ -1,0 +1,13 @@
+<template name="station">
+  <div class="station">
+    <div class="station-name">
+      <div class="white-circle"></div>
+      {{name}}
+    </div>
+    <div class="reports-container">
+      {{#each reports name}}
+        {{> report}}
+      {{/each}}
+    </div>
+  </div>
+</template>

@@ -1,6 +1,5 @@
 amplify@1.0.0
 application-configuration@1.0.4
-autopublish@1.0.2
 autoupdate@1.1.5
 base64@1.0.2
 binary-heap@1.0.2
@@ -11,7 +10,7 @@ callback-hook@1.0.2
 check@1.0.4
 chriswessels:glyphicons-halflings@2.0.0
 copleykj:livestamp@1.1.5
-d0minikk:materialize-meteor@1.94.2
+d0minikk:materialize-meteor@1.95.1
 ddp@1.0.14
 deps@1.0.6
 ejson@1.0.5
@@ -22,7 +21,6 @@ html-tools@1.0.3
 htmljs@1.0.3
 http@1.0.10
 id-map@1.0.2
-insecure@1.0.2
 iron:controller@1.0.7
 iron:core@1.0.7
 iron:dynamic-template@1.0.7

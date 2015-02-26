@@ -1,0 +1,48 @@
+<template name="report">
+  <div class="report card grey lighten-5">
+    <div class="card-content">
+      <div class="main-info">
+        {{#if positive name}}
+          <span class="report-title green-text">
+            {{name}}
+          </span>
+        {{else}}
+          <span class="report-title">
+            {{name}}
+          </span>
+        {{/if}}
+        <span class="report-location">
+          at {{location}}
+        </span>
+      </div>
+      <div class="report-details">
+        <span class="report-detail report-time">
+          <i class="mdi-device-access-time"></i>
+          {{livestamp createdAt}}
+        </span>
+
+        <span class="report-detail report-votes">
+          <i class="mdi-action-thumb-up"></i>
+          {{votes}} confirmations
+        </span>
+        {{#unless positive name}}
+          <span class="report-detail report-votes">
+            <i class="mdi-image-tag-faces"></i>
+            {{clears}} clears
+          </span>
+        {{/unless}}
+      </div>
+    </div>
+
+    {{#if canUpvote this._id}}
+    <div class="card-action">
+      <a class="waves-effect waves-light btn-flat btn-vote blue white-text upvote"><i class="mdi-action-thumb-up left"></i>Confirm</a>
+      {{#if positive name}}
+        <a class="waves-effect waves-light btn-flat btn-vote red white-text modal-trigger" href="#add-modal"><i class="mdi-action-thumb-down left"></i>Report Issue</a>
+      {{else}}
+        <a class="waves-effect waves-light btn-flat btn-vote blue white-text downvote"><i class="mdi-image-tag-faces left"></i>All Clear</a>
+      {{/if}}
+    </div>
+    {{/if}}
+  </div>
+</template>

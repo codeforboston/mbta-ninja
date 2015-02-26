@@ -1,0 +1,49 @@
+<template name="main">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey darken-2">
+        <div class="back-button">
+          <a href="/">
+            &lt;
+            <img src="/images/ninja.png" />
+          </a>
+        </div>
+        <div class="line-being-viewed">
+          {{ currentLine }}
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  {{#if noReports }}
+    <div class="top-panel card-panel green white-text">
+      <img src="/images/ninja.png" class="top-panel-ninja" />
+      <div class="top-panel-text">
+        All clear at
+        <span id="current-time"></span>
+      </div>
+    </div>
+  {{else}}
+    <div class="top-panel card-panel red white-text">
+      <img src="/images/ninja.png" class="top-panel-ninja" />
+      <div class="top-panel-text">
+        {{numReports}} incidents at
+        <span id="current-time"></span>
+      </div>
+    </div>
+  {{/if}}
+
+  <div class="line-background {{ lineColor }}"></div>
+
+  <div class="main-content">
+    {{#each stations}}
+      {{> station}}
+    {{/each}}
+  </div>
+
+  <div class="add-button-container">
+    <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#add-modal"><i class="mdi-content-add"></i></a>
+  </div>
+
+  {{> createReport}}
+</template>
