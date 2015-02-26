@@ -149,7 +149,7 @@ select {
 .intro-screen-content {
   max-width: 500px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
   padding: 10px;
 }
 
@@ -158,6 +158,14 @@ select {
   width: 250px;
   margin: 0 auto;
   text-align: left;
+}
+
+.intro-screen-content span.badge {
+  min-width: 1rem;
+}
+
+.intro-screen-content span.badge.new:after {
+  content: '';
 }
 
 .ninja-logo {
@@ -183,6 +191,10 @@ h2.app-subtitle {
 div.lines {
   margin-top: 15px;
   margin-bottom: 25px;
+}
+
+.collection .collection-item {
+  padding: 10px;
 }
 
 .share-buttons {

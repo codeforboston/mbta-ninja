@@ -17,21 +17,20 @@
         <li>No need to refresh, the app updates on its own.</li>
       </ul>
       <div class="collection lines">
-        <a href="{{pathFor 'line.show' line='Red Line - Northbound'}}" class="collection-item line-selector red-text">Red Line - Northbound (to Alewife)</a>
-        <a href="{{pathFor 'line.show' line='Red Line - Southbound'}}" class="collection-item line-selector red-text">Red Line - Southbound (to Ashmont/Braintree)</a>
-        <a href="{{pathFor 'line.show' line='Orange Line - Northbound'}}" class="collection-item line-selector orange-text">Orange Line - Northbound (to Oak Grove)</a>
-        <a href="{{pathFor 'line.show' line='Orange Line - Southbound'}}" class="collection-item line-selector orange-text">Orange Line - Southbound (to Forest Hills)</a>
-        <a href="{{pathFor 'line.show' line='Blue Line - Northbound'}}" class="collection-item line-selector blue-text">Blue Line - Northbound (to Wonderland)</a>
-        <a href="{{pathFor 'line.show' line='Blue Line - Southbound'}}" class="collection-item line-selector blue-text">Blue Line - Southbound (to Bowdoin)</a>
-        <a href="{{pathFor 'line.show' line='Green Line B - Westbound'}}" class="collection-item line-selector green-text">Green Line B - Westbound (to Boston College)</a>
-        <a href="{{pathFor 'line.show' line='Green Line B - Eastbound'}}" class="collection-item line-selector green-text">Green Line B - Eastbound (to Park St)</a>
-        <a href="{{pathFor 'line.show' line='Green Line C - Westbound'}}" class="collection-item line-selector green-text">Green Line C - Westbound (to Cleveland Circle)</a>
-        <a href="{{pathFor 'line.show' line='Green Line C - Eastbound'}}" class="collection-item line-selector green-text">Green Line C - Eastbound (to North Station)</a>
-        <a href="{{pathFor 'line.show' line='Green Line D - Westbound'}}" class="collection-item line-selector green-text">Green Line D - Westbound (to Riverside)</a>
-        <a href="{{pathFor 'line.show' line='Green Line D - Eastbound'}}" class="collection-item line-selector green-text">Green Line D - Eastbound (to North Station)</a>
-        <a href="{{pathFor 'line.show' line='Green Line E - Westbound'}}" class="collection-item line-selector green-text">Green Line E - Westbound (to Heath St)</a>
-        <a href="{{pathFor 'line.show' line='Green Line E - Eastbound'}}" class="collection-item line-selector green-text">Green Line E - Eastbound (to Lechmere)</a>
-
+        <a href="{{pathFor 'line.show' line='Red Line - Northbound'}}" class="collection-item line-selector red-text">Red Line - Northbound (to Alewife) {{#unless noReports 'Red Line - Northbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Red Line - Northbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Red Line - Southbound'}}" class="collection-item line-selector red-text">Red Line - Southbound (to Ashmont/Braintree) {{#unless noReports 'Red Line - Southbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Red Line - Southbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Orange Line - Northbound'}}" class="collection-item line-selector orange-text">Orange Line - Northbound (to Oak Grove) {{#unless noReports 'Orange Line - Northbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Orange Line - Northbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Orange Line - Southbound'}}" class="collection-item line-selector orange-text">Orange Line - Southbound (to Forest Hills) {{#unless noReports 'Orange Line - Southbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Orange Line - Southbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Blue Line - Northbound'}}" class="collection-item line-selector blue-text">Blue Line - Northbound (to Wonderland) {{#unless noReports 'Blue Line - Northbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Blue Line - Northbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Blue Line - Southbound'}}" class="collection-item line-selector blue-text">Blue Line - Southbound (to Bowdoin) {{#unless noReports 'Blue Line - Southbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Blue Line - Southbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Green Line B - Westbound'}}" class="collection-item line-selector green-text">Green Line B - Westbound (to Boston College) {{#unless noReports 'Green Line B - Westbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Green Line B - Westbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Green Line B - Eastbound'}}" class="collection-item line-selector green-text">Green Line B - Eastbound (to Lechmere) {{#unless noReports 'Green Line B - Eastbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Green Line B - Eastbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Green Line C - Westbound'}}" class="collection-item line-selector green-text">Green Line C - Westbound (to Cleveland Circle) {{#unless noReports 'Green Line C - Westbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Green Line C - Westbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Green Line C - Eastbound'}}" class="collection-item line-selector green-text">Green Line C - Eastbound (to North Station) {{#unless noReports 'Green Line C - Eastbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Green Line C - Eastbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Green Line D - Westbound'}}" class="collection-item line-selector green-text">Green Line D - Westbound (to Riverside) {{#unless noReports 'Green Line D - Westbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Green Line D - Westbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Green Line D - Eastbound'}}" class="collection-item line-selector green-text">Green Line D - Eastbound (to North Station) {{#unless noReports 'Green Line D - Eastbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Green Line D - Eastbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Green Line E - Westbound'}}" class="collection-item line-selector green-text">Green Line E - Westbound (to Heath St) {{#unless noReports 'Green Line E - Westbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Green Line E - Westbound'}}</span>{{/unless}}</a>
+        <a href="{{pathFor 'line.show' line='Green Line E - Eastbound'}}" class="collection-item line-selector green-text">Green Line E - Eastbound (to Park St) {{#unless noReports 'Green Line E - Eastbound'}}<span class="new badge deep-orange darken-4">{{numReports 'Green Line E - Eastbound'}}</span>{{/unless}}</a>
       </div>
       <div class="share-buttons">
         <div class="fb-share-button" data-href="http://mbta.ninja" data-layout="button_count"></div>
