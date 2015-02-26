@@ -67,7 +67,8 @@ if (Meteor.isClient) {
     {name: 'Train stopped between stations'},
     {name: 'Disabled train'},
     {name: 'Medical emergency'},
-    {name: 'Normal conditions'}
+    {name: 'Normal conditions'},
+    {name: 'Police action'}
   ];
 
   var stations = {
