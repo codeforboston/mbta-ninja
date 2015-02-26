@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "meteor-newrelic": {}
+    },
+    "packages": {
+      "meteor-newrelic": {
+        "git": "https://github.com/andreioprisan/meteor-newrelic.git",
+        "tag": "v1.0.1",
+        "commit": "54131ffaa2f47533339959bd296557ccb692e314"
+      }
+    }
+  }
+}
