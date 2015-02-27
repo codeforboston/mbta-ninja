@@ -22,14 +22,18 @@ SyncedCron.add({
       {multi: true}
     );
 
-    var activeRemaining = Reports.find({expired: false}).count()
-    console.log(activeRemaining + " active reports remaining.")
+    var activeRemaining = Reports.find({expired: false}).count();
+    console.log(activeRemaining + ' active reports remaining.');
   }
 });
+
+SyncedCron.options = {
+  collectionTTL: 172800 // Expire cron log documents after 2 days
+};
 
 SyncedCron.start();
 
 // Publish subset of non-expired reports to client
-Meteor.publish("reports", function () {
+Meteor.publish('reports', function () {
   return Reports.find({expired: false});
 });
