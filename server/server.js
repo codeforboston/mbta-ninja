@@ -27,10 +27,6 @@ SyncedCron.add({
   }
 });
 
-SyncedCron.options = {
-  collectionTTL: 172800 // Expire cron log documents after 2 days
-};
-
 SyncedCron.start();
 
 // Publish subset of non-expired reports to client
