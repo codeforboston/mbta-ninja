@@ -16,24 +16,73 @@
         <li>Get realtime updates from fellow T riders.</li>
         <li>No need to refresh, the app updates on its own.</li>
       </ul>
-      <div class="collection lines">
-        <a href="{{pathFor 'line.show' line='Red Line - Northbound'}}" class="collection-item line-selector red-text">Red Line - Northbound (to Alewife)</a>
-        <a href="{{pathFor 'line.show' line='Red Line - Southbound'}}" class="collection-item line-selector red-text">Red Line - Southbound (to Ashmont/Braintree)</a>
-        <a href="{{pathFor 'line.show' line='Orange Line - Northbound'}}" class="collection-item line-selector orange-text">Orange Line - Northbound (to Oak Grove)</a>
-        <a href="{{pathFor 'line.show' line='Orange Line - Southbound'}}" class="collection-item line-selector orange-text">Orange Line - Southbound (to Forest Hills)</a>
-        <a href="{{pathFor 'line.show' line='Blue Line - Northbound'}}" class="collection-item line-selector blue-text">Blue Line - Northbound (to Wonderland)</a>
-        <a href="{{pathFor 'line.show' line='Blue Line - Southbound'}}" class="collection-item line-selector blue-text">Blue Line - Southbound (to Bowdoin)</a>
-        <a href="{{pathFor 'line.show' line='Green Line B - Westbound'}}" class="collection-item line-selector green-text">Green Line B - Westbound (to Boston College)</a>
-        <a href="{{pathFor 'line.show' line='Green Line B - Eastbound'}}" class="collection-item line-selector green-text">Green Line B - Eastbound (to Park St)</a>
-        <a href="{{pathFor 'line.show' line='Green Line C - Westbound'}}" class="collection-item line-selector green-text">Green Line C - Westbound (to Cleveland Circle)</a>
-        <a href="{{pathFor 'line.show' line='Green Line C - Eastbound'}}" class="collection-item line-selector green-text">Green Line C - Eastbound (to North Station)</a>
-        <a href="{{pathFor 'line.show' line='Green Line D - Westbound'}}" class="collection-item line-selector green-text">Green Line D - Westbound (to Riverside)</a>
-        <a href="{{pathFor 'line.show' line='Green Line D - Eastbound'}}" class="collection-item line-selector green-text">Green Line D - Eastbound (to North Station)</a>
-        <a href="{{pathFor 'line.show' line='Green Line E - Westbound'}}" class="collection-item line-selector green-text">Green Line E - Westbound (to Heath St)</a>
-        <a href="{{pathFor 'line.show' line='Green Line E - Eastbound'}}" class="collection-item line-selector green-text">Green Line E - Eastbound (to Lechmere)</a>
-        <a href="{{pathFor 'line.show' line='Commuter Rail Needham Line - Inbound'}}" class="collection-item line-selector purple-text">Commuter Rail Needham Line - Inbound (to Boston)</a>        
-        <a href="{{pathFor 'line.show' line='Commuter Rail Needham Line - Outbound'}}" class="collection-item line-selector purple-text">Commuter Rail Needham Line - Outbound (to Needham)</a> 
-      </div>
+
+      <ul class="collapsible" data-collapsible="accordion">
+        <li class="line">
+          <div class="collapsible-header collapsible-header-red-line"><i class="mdi-maps-directions-subway subway-icon red-line"></i>Red Line<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2"></i></span></div>
+          <div class="collapsible-body collapsible-body-red-line">
+            <a href="{{pathFor 'line.show' line='Red Line - Northbound'}}">Northbound (to Alewife)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-red-line">
+            <a href="{{pathFor 'line.show' line='Red Line - Southbound'}}">Southbound (to Ashmont/Braintree)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+        </li>
+        <li class="line">
+          <div class="collapsible-header collapsible-header-orange-line"><i class="mdi-maps-directions-subway subway-icon orange-line"></i>Orange Line<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2"></i></span></div>
+          <div class="collapsible-body collapsible-body-orange-line">
+            <a href="{{pathFor 'line.show' line='Orange Line - Northbound'}}">Northbound (to Oak Grove)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-orange-line">
+            <a href="{{pathFor 'line.show' line='Orange Line - Southbound'}}">Southbound (to Forest Hills)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+        </li>
+        <li class="line">
+          <div class="collapsible-header collapsible-header-green-line"><i class="mdi-maps-directions-subway subway-icon green-line"></i>Green Line<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2" ></i></span></div>
+          <div class="collapsible-body collapsible-body-green-line">
+            <a href="{{pathFor 'line.show' line='Green Line B - Westbound'}}">B - Westbound (to Boston College)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-green-line">
+            <a href="{{pathFor 'line.show' line='Green Line B - Eastbound'}}">B - Eastbound (to Park St)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-green-line">
+            <a href="{{pathFor 'line.show' line='Green Line C - Westbound'}}">C - Westbound (to Cleveland Circle)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-green-line">
+            <a href="{{pathFor 'line.show' line='Green Line C - Eastbound'}}">C - Eastbound (to North Station)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-green-line">
+            <a href="{{pathFor 'line.show' line='Green Line D - Westbound'}}">D - Westbound (to Riverside)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-green-line">
+            <a href="{{pathFor 'line.show' line='Green Line D - Eastbound'}}">D - Eastbound (to North Station)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-green-line">
+            <a href="{{pathFor 'line.show' line='Green Line E - Westbound'}}">E - Westbound (to Heath St)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-green-line">
+            <a href="{{pathFor 'line.show' line='Green Line E - Eastbound'}}">E - Eastbound (to Lechmere)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+        </li>
+        <li class="line">
+          <div class="collapsible-header collapsible-header-blue-line"><i class="mdi-maps-directions-subway subway-icon blue-line"></i>Blue Line<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2"></i></span></div>
+          <div class="collapsible-body collapsible-body-blue-line">
+            <a href="{{pathFor 'line.show' line='Blue Line - Northbound'}}">Northbound (to Wonderland)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-blue-line">
+            <a href="{{pathFor 'line.show' line='Blue Line - Southbound'}}">Southbound (to Bowdoin)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+        </li>
+        <li class="line">
+          <div class="collapsible-header collapsible-header-purple-line"><i class="mdi-maps-directions-subway subway-icon purple-line"></i>Commuter Rail Needham Line<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2"></i></span></div>
+          <div class="collapsible-body collapsible-body-purple-line">
+            <a href="{{pathFor 'line.show' line='Commuter Rail Needham Line - Inbound'}}">Commuter Rail Needham Line - Inbound (to Boston)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+          <div class="collapsible-body collapsible-body-purple-line">
+            <a href="{{pathFor 'line.show' line='Commuter Rail Needham Line - Outbound'}}">Commuter Rail Needham Line - Outbound (to Needham)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+          </div>
+        </li>
+      </ul>
+
       <div class="share-buttons">
         <div class="fb-share-button" data-href="http://mbta.ninja" data-layout="button_count"></div>
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mbta.ninja" data-text="Check out MBTA Ninja - Waze for the T" data-via="mbta_ninja" data-hashtags="mbta">Tweet</a>
