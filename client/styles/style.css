@@ -43,23 +43,16 @@
 .back-button {
   float: left;
   overflow: hidden;
-  padding-top: 9px;
+  position: absolute;
   margin-left: 10px;
-  margin-right: 10px;
-}
-
-.back-button img {
-  height: 20px;
-  margin-right: 10px;
-  vertical-align: middle;
+  line-height: 44px;
 }
 
 .line-being-viewed {
   margin-top: 15px;
-  margin-right: 8px;
   text-align: center;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .top-panel {
@@ -71,14 +64,15 @@
 }
 
 img.top-panel-ninja {
-  height: 50px;
+  height: 40px;
   float: left;
 }
 
 .top-panel-text {
   float: left;
-  margin-top: 14px;
-  font-size: 18px;
+  margin-left: 5px;
+  line-height: 40px;
+  font-size: 16px;
 }
 
 .main-content {
@@ -159,22 +153,31 @@ select {
   padding: 10px;
 }
 
+.logo {
+  overflow: hidden;
+  width: 250px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 .ninja-logo {
-  height: 100px;
-  width: 100px;
+  height: 64px;
+  width: 64px;
   margin: 0 auto 10px auto;
+  float: left;
 }
 
 h1.app-title {
-  font-size: 40px;
+  font-size: 32px;
   margin: 0 0 5px 0;
   line-height: 1.2em;
 }
 
 h2.app-subtitle {
-  font-size: 24px;
+  font-size: 18px;
   margin: 0 0 10px 0;
   line-height: 1.2em;
+  font-style: italic;
 }
 
 div.lines {
