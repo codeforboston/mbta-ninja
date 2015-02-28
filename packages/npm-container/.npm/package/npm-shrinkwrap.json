@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "protobufjs": {
+      "version": "3.8.2",
+      "dependencies": {
+        "bytebuffer": {
+          "version": "3.5.4",
+          "dependencies": {
+            "long": {
+              "version": "2.2.3"
+            },
+            "bufferview": {
+              "version": "1.0.1"
+            }
+          }
+        },
+        "ascli": {
+          "version": "0.3.0",
+          "dependencies": {
+            "colour": {
+              "version": "0.7.1"
+            },
+            "optjs": {
+              "version": "3.2.1-boom"
+            }
+          }
+        }
+      }
+    }
+  }
+}

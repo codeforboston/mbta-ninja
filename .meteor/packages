@@ -12,3 +12,5 @@ u2622:persistent-session
 percolate:synced-cron
 iron:router
 momentjs:moment
+meteorhacks:npm
+npm-container
