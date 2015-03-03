@@ -1,3 +1,25 @@
+@-webkit-keyframes spin-180 {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(180deg);
+    }
+}
+@-moz-keyframes spin-180 {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(180deg);
+    }
+}
+@keyframes spin-180 {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(180deg);
+    }
+}
+
 /* CSS declarations go here */
 
 .line-background {
@@ -149,7 +171,6 @@ select {
 .intro-screen-content {
   max-width: 500px;
   margin: 0 auto;
-  text-align: center;
   padding: 10px;
 }
 
@@ -178,6 +199,20 @@ h2.app-subtitle {
   margin: 0 0 10px 0;
   line-height: 1.2em;
   font-style: italic;
+}
+
+.collection {
+  margin: 0;
+  border: 0;
+}
+
+.line.active .mdi-navigation-expand-more {
+  -webkit-animation: spin-180 0.25s 1 ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: spin-180 0.25s 1 ease-out;
+  -moz-animation-fill-mode: forwards;
+  animation: spin-180 0.25s 1 ease-out;
+  animation-fill-mode: forwards;
 }
 
 div.lines {

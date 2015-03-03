@@ -1,4 +1,7 @@
 Template.landing.rendered = function() {
+
+  $('.collapsible').collapsible();
+
   // Twitter button script
   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
@@ -12,3 +15,10 @@ Template.landing.rendered = function() {
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 };
+
+
+Template.landing.events({
+  'click .line': function(e) {
+    $(this).toggleClass('active');
+  }
+});
