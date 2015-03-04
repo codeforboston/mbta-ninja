@@ -25,6 +25,10 @@
   background-color: blue;
 }
 
+.purple-line {
+  background-color: purple;
+}
+
 .navbar-fixed {
   z-index: 99;
   height: 50px;
