@@ -28,6 +28,9 @@ Template.main.helpers({
     }
     else if(line.indexOf("Blue") > -1) {
       lineColor = "blue-line";
+    } 
+    else if(line.indexOf("Commuter") > -1) {
+      lineColor = "purple-line";
     }
 
     return lineColor;
