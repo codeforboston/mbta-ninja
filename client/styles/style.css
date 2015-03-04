@@ -1,5 +1,37 @@
 /* CSS declarations go here */
 
+@-webkit-keyframes spin-180 {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(180deg);
+    }
+}
+@-moz-keyframes spin-180 {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(180deg);
+    }
+}
+@keyframes spin-180 {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(180deg);
+    }
+}
+
+.line.active .mdi-navigation-expand-more {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: spin-180 0.25s 1 ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: spin-180 0.25s 1 ease-out;
+  -moz-animation-fill-mode: forwards;
+  animation: spin-180 0.25s 1 ease-out;
+  animation-fill-mode: forwards;
+}
+
 .line-background {
   position: fixed;
   width: 10px;
@@ -9,24 +41,59 @@
   z-index: -1;
 }
 
+/* Colors are from MBTA maps */
 .red-line {
-  background-color: red;
+  background-color: #C60813;
 }
 
 .orange-line {
-  background-color: orange;
+  background-color: #FA6820;
 }
 
 .green-line {
-  background-color: green;
+  background-color: #0A6536;
 }
 
 .blue-line {
-  background-color: blue;
+  background-color: #041299;
 }
 
 .purple-line {
-  background-color: purple;
+  background-color: #801174;
+}
+
+/* Collapsible menu styling */
+.collapsible-body {
+  padding: 10px;
+  text-align: left;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.collapsible-body:hover {
+  background-color: #ddd;
+}
+
+.collapsible-body > a {
+  color: black;
+}
+
+.collapsible-header {
+  text-align: left;
+  padding-left: 0px;
+}
+
+.collapsible-header:hover {
+  background-color: #f0f0f0;
+}
+
+.collapsible-header i.subway-icon {
+  width: 50px;
+  color: white;
+}
+
+.mdi-navigation {
+  text-align: right;
 }
 
 .navbar-fixed {
