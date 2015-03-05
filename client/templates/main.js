@@ -41,6 +41,9 @@ Template.main.helpers({
     else if (line.indexOf('Fairmount') > -1) {
       lineColor = 'purple-line';
     }
+    else if (line.indexOf('Franklin') > -1) {
+      lineColor = 'purple-line';
+    }
 
     return lineColor;
   }
