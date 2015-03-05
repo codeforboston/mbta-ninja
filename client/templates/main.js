@@ -20,7 +20,7 @@ Template.main.helpers({
     if (line.indexOf('Red') > -1) {
       lineColor = 'red-line';
     }
-    else if (line.indexOf('Green') > -1) {
+    else if (line.indexOf('Green Line') > -1) {
       lineColor = 'green-line';
     }
     else if (line.indexOf('Orange') > -1) {
@@ -42,6 +42,9 @@ Template.main.helpers({
       lineColor = 'purple-line';
     }
     else if (line.indexOf('Franklin') > -1) {
+      lineColor = 'purple-line';
+    }
+    else if (line.indexOf('Greenbush') > -1) {
       lineColor = 'purple-line';
     }
 
