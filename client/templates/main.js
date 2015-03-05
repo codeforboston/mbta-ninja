@@ -47,7 +47,9 @@ Template.main.helpers({
     else if (line.indexOf('Greenbush') > -1) {
       lineColor = 'purple-line';
     }
-
+    else if (line.indexOf('Kingston') > -1) {
+      lineColor = 'purple-line';
+    }
     return lineColor;
   }
 });
