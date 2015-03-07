@@ -50,6 +50,21 @@ Template.main.helpers({
     else if (line.indexOf('Kingston') > -1) {
       lineColor = 'purple-line';
     }
+    else if (line.indexOf('Haverhill') > -1) {
+      lineColor = 'purple-line';
+    }
+    else if (line.indexOf('Lowell') > -1) {
+      lineColor = 'purple-line';
+    }
+    else if (line.indexOf('Lakeville') > -1) {
+      lineColor = 'purple-line';
+    }
+    else if (line.indexOf('Rockport') > -1) {
+      lineColor = 'purple-line';
+    }
+    else if (line.indexOf('Providence') > -1) {
+      lineColor = 'purple-line';
+    }
     return lineColor;
   }
 });
