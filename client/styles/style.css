@@ -62,6 +62,10 @@
   background-color: #801174;
 }
 
+.silver-line {
+  background-color: #949494;
+}
+
 /* Collapsible menu styling */
 .collapsible-body {
   padding: 10px;

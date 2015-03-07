@@ -65,6 +65,10 @@ Template.main.helpers({
     else if (line.indexOf('Providence') > -1) {
       lineColor = 'purple-line';
     }
+    else if (line.indexOf('SL') > -1) {
+      lineColor = 'silver-line';
+    }
+
     return lineColor;
   }
 });

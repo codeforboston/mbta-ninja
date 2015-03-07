@@ -4,7 +4,9 @@ Template.createReport.helpers({
   stations: function () {
     return currentStations();
   },
-  reportTypes: reportTypes
+  reportTypes: function() {
+    return reportTypes[currentTransitType()];
+  }
 });
 
 Template.createReport.events({
