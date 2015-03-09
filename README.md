@@ -1,5 +1,5 @@
 # MBTA Ninja
-MBTA Ninja is "Waze for the T": a crowdsourced alerting system for public transit in Boston.
+MBTA Ninja is a crowdsourced alerting system for public transit in Boston.
 
 View the site: [mbta.ninja](http://mbta.ninja)
 Follow us on Twitter: [@mbta_ninja](https://twitter.com/mbta_ninja)
