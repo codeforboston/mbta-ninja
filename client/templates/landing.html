@@ -8,12 +8,13 @@
           MBTA Ninja
         </h1>
       </div>
-      <ul>
+      <ul class="slogans">
         <li>No more guessing what "minor delays" means.</li>
         <li>Get realtime updates from fellow T riders.</li>
         <li>No need to refresh, the app updates on its own.</li>
       </ul>
 
+      <h1 class="transport-type">Subway</h1>
       <ul class="collapsible" data-collapsible="accordion">
         <li class="line">
           <div class="collapsible-header"><i class="mdi-maps-directions-subway subway-icon red-line"></i>Red Line<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2"></i></span></div>
@@ -96,6 +97,10 @@
             <a href="{{pathFor 'line.show' line='SL5 - Outbound' type='bus'}}">SL5 Outbound (to Dudley Station)<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
           </div>
         </li>
+      </ul>
+
+      <h1 class="transport-type">Commuter rail</h1>
+      <ul class="collapsible" data-collapsible="accordion">
         <li class="line">
           <div class="collapsible-header"><i class="mdi-maps-directions-train subway-icon purple-line"></i>Fairmount Line<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2"></i></span></div>
           <div class="collapsible-body">
