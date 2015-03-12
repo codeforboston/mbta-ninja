@@ -29,3 +29,12 @@ Template.landing.events({
     $(this).toggleClass('active');
   }
 });
+
+Template.landing.helpers({
+  subwayLines: function() {
+    return listOfLines().subway;
+  },
+  trainLines: function() {
+    return listOfLines().train;
+  }
+});
