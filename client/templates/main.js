@@ -29,45 +29,11 @@ Template.main.helpers({
     else if (line.indexOf('Blue') > -1) {
       lineColor = 'blue-line';
     }
-    else if (line.indexOf('Needham') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Fitchburg') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Worcester') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Fairmount') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Franklin') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Greenbush') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Kingston') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Haverhill') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Lowell') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Lakeville') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Rockport') > -1) {
-      lineColor = 'purple-line';
-    }
-    else if (line.indexOf('Providence') > -1) {
-      lineColor = 'purple-line';
-    }
     else if (line.indexOf('SL') > -1) {
       lineColor = 'silver-line';
     }
+    else // Everything else is a commuter line
+      lineColor = 'purple-line';
 
     return lineColor;
   }
