@@ -1,0 +1,23 @@
+<template name="createNormal">
+  <div id="add-normal-modal" class="modal">
+    <div class="modal-content">
+      <form>
+        <label for="normalNameInput"> Report Type: </label>
+        <select id="normalNameInput">
+          {{#each normalReportTypes}}
+            <option value="{{name}}">{{name}}</option>
+          {{/each}}
+        </select>
+        <label for="normalLocationInput"> Location: </label>
+        <select id="normalLocationInput">
+          {{#each stations}}
+            <option value="{{name}}">{{name}}</option>
+          {{/each}}
+        </select>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="waves-effect waves-green btn btn-flat blue white-text modal-action modal-close submit">Submit</a>
+    </div>
+  </div>
+</template>
