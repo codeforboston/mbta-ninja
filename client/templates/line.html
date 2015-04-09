@@ -1,5 +1,6 @@
 <template name="line">
   <li class="line">
+<<<<<<< HEAD
     <div class="collapsible-header">
       {{#unless noLineReports}}
       <i class="mdi-alert-error red-text subway-icon"></i>
@@ -25,6 +26,15 @@
       <span class="badge black-text">{{numReports}}</span>
       {{/unless}}
     </div>
+=======
+  <div class="collapsible-header"><i class="mdi-maps-directions-{{type}} subway-icon {{color}}"></i>{{line}}<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2"></i></span>{{#unless noLineReports}}<span class="badge">{{numLineReports}} Report(s)</span>{{/unless}}</div>
+    {{#each directions}}
+      <div class="collapsible-body">
+        <a href="{{pathFor 'line.show' line=path type=../type}}">{{direction}}
+        <span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+        {{#unless noReports }}<span class="badge">{{numReports}} Report(s)</span>{{/unless}}
+      </div>
+>>>>>>> 469e042d4baab2026320d7228bf02b6875d86c66
     {{/each}}
   </li>
 </template>
