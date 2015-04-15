@@ -9,6 +9,7 @@ boilerplate-generator@1.0.2
 callback-hook@1.0.2
 check@1.0.4
 chriswessels:glyphicons-halflings@2.0.0
+coffeescript@1.0.5
 copleykj:livestamp@1.1.5
 d0minikk:materialize-meteor@1.95.1
 ddp@1.0.14
@@ -42,6 +43,7 @@ mobile-status-bar@1.0.2
 momentjs:moment@2.9.0
 mongo@1.0.11
 mrt:moment@2.8.1
+nimble:restivus@0.6.3
 observe-sequence@1.0.4
 ordered-dict@1.0.2
 percolate:synced-cron@1.1.1
