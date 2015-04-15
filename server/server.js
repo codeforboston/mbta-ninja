@@ -1,4 +1,19 @@
-Meteor.startup(function() {});
+Meteor.startup(function() {
+  Restivus.configure({
+    useAuth: false,
+    prettyJson:true
+  });
+
+  
+  Restivus.addRoute('reports',{authRequired: false},{ 
+      get: function(){
+      //GET api/reports
+      //Gives you the current list of active reports.
+      var reports = Reports.find({expired: false}).fetch();
+      return {statusCode:200, body:{data: reports}};
+    }
+  });
+});
 
 // Task to expire old reports. It checks every minute to see if there are
 // tasks reported/confirmed more than 30 minutes ago.
