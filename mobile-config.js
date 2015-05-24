@@ -2,7 +2,7 @@ App.info({
   id: 'org.codeforboston.mbta-ninja',
   name: 'MBTA Ninja',
   description: 'Crowdsource MBTA T alerts',
-  version: '1.0.0'
+  version: '1.0.1'
 });
 
 App.icons({
