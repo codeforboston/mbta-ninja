@@ -1,9 +1,19 @@
 <template name="line">
   <li class="line">
-  <div class="collapsible-header"><i class="mdi-maps-directions-{{type}} subway-icon {{color}}"></i>{{line}}<span class="secondary-content"><i class="mdi-navigation-expand-more grey-text lighten-2"></i></span></div>
+  <div class="collapsible-header"><i class="mdi-maps-directions-{{type}} subway-icon {{color}}"></i>{{line}}
+  <span class="secondary-content">
+    {{#if lineAlerts}}
+      <i class="mdi-alert-warning red-text"></i>
+    {{/if}}
+    <i class="mdi-navigation-expand-more grey-text lighten-2"></i></span>
+  </div>
     {{#each directions}}
       <div class="collapsible-body">
-        <a href="{{pathFor 'line.show' line=path type=../type}}">{{direction}}<span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
+        <a href="{{pathFor 'line.show' line=path type=../type}}">{{direction}}
+        {{#if numberReports}}
+          <i class="mdi-alert-warning red-text"></i>
+        {{/if}}
+        <span class="secondary-content"><i class="mdi-navigation-chevron-right black-text"></i></span></a>
       </div>
     {{/each}}
   </li>
