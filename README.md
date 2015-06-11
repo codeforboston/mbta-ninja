@@ -26,7 +26,7 @@ First, you have to login:
 
 Then, clone this repo and enter that folder:
 
-	git clone https://github.com/davidlago/mbta-ninja.git
+	git clone https://github.com/codeforboston/mbta-ninja.git
 	cd mbta-ninja
 
 Next, make the heroku app:
