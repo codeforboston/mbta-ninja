@@ -22,6 +22,13 @@ Template.landing.rendered = function() {
     window.location = $(this).find("a").attr("href");
     return false;
   });
+
+  // Detect Android browsers and suggest install of app
+  var ua = navigator.userAgent.toLowerCase();
+  var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+  if(isAndroid) {
+    $(".intro-screen-content").prepend("<a href='https://play.google.com/store/apps/details?id=org.codeforboston.mbta_ninja'><img alt='Android app on Google Play'src='https://developer.android.com/images/brand/en_app_rgb_wo_45.png' /></a>");
+  }
 };
 
 Template.landing.events({
