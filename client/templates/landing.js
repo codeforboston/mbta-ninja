@@ -1,3 +1,5 @@
+Meteor.subscribe('reports');
+
 Template.landing.rendered = function() {
   // Twitter button script
   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
@@ -43,5 +45,30 @@ Template.landing.helpers({
   },
   trainLines: function() {
     return listOfLines().train;
+  }
+});
+
+Template.line.helpers({
+  noReports: function(){
+    return numReports(this.path) === 0;
+  },
+  numReports: function(){
+    return numReports(this.path);
+  },
+  numLineReports: function() {
+    
+    var lineReports = 0;
+    for(var i = 0; i< this.directions.length; i++){
+      lineReports += numReports(this.directions[i].path);
+    }
+    return lineReports;
+  },
+  noLineReports: function()
+  {
+    var lineReports = 0;
+    for(var i = 0; i< this.directions.length; i++){
+      lineReports += numReports(this.directions[i].path);
+    }
+    return lineReports === 0;
   }
 });
