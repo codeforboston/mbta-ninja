@@ -4,7 +4,7 @@ MBTA Ninja is a crowdsourced alerting system for public transit in Boston.
 View the site: [mbta.ninja](http://mbta.ninja)
 Follow us on Twitter: [@mbta_ninja](https://twitter.com/mbta_ninja)
 
-The project started as a weekend hack by [David Lago](https://twitter.com/dave_lago), [Geoffrey Litt](https://twitter.com/geoffreylitt), and [Radhika Malik](https://twitter.com/radhika1990) for [CodeAcross Boston 2015](http://www.eventbrite.com/e/codeacross-boston-2015-tickets-15442437747).
+The project started as a weekend hack by [David Lago](https://twitter.com/dave_lago), [Geoffrey Litt](https://twitter.com/geoffreylitt), and [Radhika Malik](https://twitter.com/radhikam24) for [CodeAcross Boston 2015](http://www.eventbrite.com/e/codeacross-boston-2015-tickets-15442437747).
 The site is built using Meteor.js and Materialize.css, and deployed on Heroku.
 
 ## Contributing
@@ -13,13 +13,15 @@ We welcome contributions that would make this tool more useful for the Boston co
 
 Please create a GitHub issue if you have an idea. And if you're able to code a solution and open a pull request, even better!
 
+Our roadmap is available on [Waffle](https://waffle.io/codeforboston/mbta-ninja).
+
 ## Deployment
 
 MBTA Ninja is deployed on [Heroku](http://heroku.com). Here's a quick guide to getting it up and running so you don't have to suffer too muh to get it set up. If you dont have a heroku account, make one becore you start.
 
 ### Make a heroku app
 
-In order to get up and running on Heroku, you first have to make a heroku app. We'll clone this repo as the example which you can modify. 
+In order to get up and running on Heroku, you first have to make a heroku app. We'll clone this repo as the example which you can modify.
 
 First, you have to login:
 	heroku login
@@ -45,9 +47,9 @@ To deploy this repo as a heroku app, you'll need to specify that it should be ru
 
 You should be good to go!
 
-### Add a MongoLab Extension 
+### Add a MongoLab Extension
 
-You'll need a database to handle the reports of incidents as well as the related up and down votes. This is all set up in the code, though you'll need to make an instance of a MongoLab DB in order to handle the data for this specific instance. 
+You'll need a database to handle the reports of incidents as well as the related up and down votes. This is all set up in the code, though you'll need to make an instance of a MongoLab DB in order to handle the data for this specific instance.
 
 To do this, run:
 
@@ -60,7 +62,7 @@ Go to the heroku dashboard for your app and find the *Settings* tab. Click on *r
 ### Push to the repo
 
 Once you are ready to deploy, run the following
-	
+
 	git add -A
 	git commit -m "first commit"
 	git push heroku master
@@ -68,13 +70,13 @@ Once you are ready to deploy, run the following
 Building meteor.js may take a while.
 
 Make sure at least one instance is running:
-	
+
 	heroku ps:scale web=1
 
 Once you are done, your app should be ready at app_name.herokuapp.com! You can quickly open it by running:
-	
+
 	heroku open
-	
+
 # License
 
 MBTA Ninja is released under the [MIT License](http://www.opensource.org/licenses/MIT)
