@@ -19,7 +19,7 @@ Our roadmap is available on [Waffle](https://waffle.io/codeforboston/mbta-ninja)
 
 MBTA Ninja is deployed on [Heroku](http://heroku.com). Below is a quick guide to getting it up and running so you don't have to suffer too much to get it set up. 
 
-Prerequisition  
+Prerequisite:  
 
 - If you dont have a heroku account, make one becore you start.
 
@@ -35,8 +35,9 @@ curl https://install.meteor.com/ | sh
 In order to get up and running on Heroku, you first have to make a heroku app. We'll clone this repo as the example which you can modify.
 
 First, you have to login:
+```
 	heroku login
-
+```
 Then, clone this repo and enter that folder:
 
 	git clone https://github.com/codeforboston/mbta-ninja.git
@@ -88,7 +89,7 @@ Once you are done, your app should be ready at app_name.herokuapp.com! You can q
 
 	heroku open
 
-If your build is successful, but still get the Application Error page that says  
+If your build is successful, but you get the Application Error page that says  
 ```
 An error occurred in the application and your page could not be served. Please try again in a few moments.
 
