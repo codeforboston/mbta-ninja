@@ -17,7 +17,7 @@ Our roadmap is available on [Waffle](https://waffle.io/codeforboston/mbta-ninja)
 
 ## Deployment
 
-MBTA Ninja is deployed on [Heroku](http://heroku.com). Here's a quick guide to getting it up and running so you don't have to suffer too muh to get it set up. If you dont have a heroku account, make one becore you start.
+MBTA Ninja is deployed on [Heroku](http://heroku.com). Below is a quick guide to getting it up and running so you don't have to suffer too muh to get it set up. If you dont have a heroku account, make one becore you start.
 
 ### Make a heroku app
 
