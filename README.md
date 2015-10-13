@@ -24,7 +24,7 @@ Prerequisition
 - If you dont have a heroku account, make one becore you start.
 
 - Install Meteor.js  
-	curl https://install.meteor.com/ | sh
+    curl https://install.meteor.com/ | sh
 
 - Install [Heroku Toolbelt](https://toolbelt.heroku.com/)  
 
