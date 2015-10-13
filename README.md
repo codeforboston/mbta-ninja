@@ -17,7 +17,16 @@ Our roadmap is available on [Waffle](https://waffle.io/codeforboston/mbta-ninja)
 
 ## Deployment
 
-MBTA Ninja is deployed on [Heroku](http://heroku.com). Below is a quick guide to getting it up and running so you don't have to suffer too muh to get it set up. If you dont have a heroku account, make one becore you start.
+MBTA Ninja is deployed on [Heroku](http://heroku.com). Below is a quick guide to getting it up and running so you don't have to suffer too much to get it set up. 
+
+Prerequisition  
+
+- If you dont have a heroku account, make one becore you start.
+
+- Install Meteor.js  
+	curl https://install.meteor.com/ | sh
+
+- Install [Heroku Toolbelt](https://toolbelt.heroku.com/)  
 
 ### Make a heroku app
 
@@ -41,7 +50,7 @@ app_name is optional and can be whatever you want it to be. A crazy name you can
 
 Heroku uses framework-specific buildpacks in order to know how to run-your app.
 
-To deploy this repo as a heroku app, you'll need to specify that it should be run using the custiom meteor.js buildpack. To do this, all you need to run is:
+To deploy this repo as a heroku app, you'll need to specify that it should be run using the custom meteor.js buildpack. To do this, all you need to run is:
 
 	heroku buildpacks:set https://github.com/jordansissel/heroku-buildpack-meteor.git
 
