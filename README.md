@@ -88,6 +88,14 @@ Once you are done, your app should be ready at app_name.herokuapp.com! You can q
 
 	heroku open
 
+If you get a Application Error page that says  
+```
+An error occurred in the application and your page could not be served. Please try again in a few moments.
+
+If you are the application owner, check your logs for details.
+```
+It can be that by default Heroku opens the app from `https://`. If you open the URL from `http://` it will work fine. To change the settings, you need to add ROOT_URL to the Config Variables in your app settings; the value is `http://YOUR-APP-NAME.herokuapp.com`.
+
 # License
 
 MBTA Ninja is released under the [MIT License](http://www.opensource.org/licenses/MIT)
