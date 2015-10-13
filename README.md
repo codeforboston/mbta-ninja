@@ -28,7 +28,7 @@ Prerequisition
 ```
 curl https://install.meteor.com/ | sh
 ```
-- Install [Heroku Toolbelt](https://toolbelt.heroku.com/)  
+- Install [Heroku Toolbelt](https://toolbelt.heroku.com/) so you will have the heroku command line tool.  
 
 ### Make a heroku app
 
@@ -88,7 +88,7 @@ Once you are done, your app should be ready at app_name.herokuapp.com! You can q
 
 	heroku open
 
-If you get a Application Error page that says  
+If your build is successful, but still get the Application Error page that says  
 ```
 An error occurred in the application and your page could not be served. Please try again in a few moments.
 
