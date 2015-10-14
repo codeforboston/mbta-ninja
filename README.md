@@ -17,15 +17,27 @@ Our roadmap is available on [Waffle](https://waffle.io/codeforboston/mbta-ninja)
 
 ## Deployment
 
-MBTA Ninja is deployed on [Heroku](http://heroku.com). Below is a quick guide to getting it up and running so you don't have to suffer too muh to get it set up. If you dont have a heroku account, make one becore you start.
+MBTA Ninja is deployed on [Heroku](http://heroku.com). Below is a quick guide to getting it up and running so you don't have to suffer too much to get it set up.
+
+Prerequisite:  
+
+- If you dont have a heroku account, make one before you start.
+
+- Install Meteor.js  
+
+```
+curl https://install.meteor.com/ | sh
+```
+- Install [Heroku Toolbelt](https://toolbelt.heroku.com/) so you will have the heroku command line tool.  
 
 ### Make a heroku app
 
 In order to get up and running on Heroku, you first have to make a heroku app. We'll clone this repo as the example which you can modify.
 
 First, you have to login:
+```
 	heroku login
-
+```
 Then, clone this repo and enter that folder:
 
 	git clone https://github.com/codeforboston/mbta-ninja.git
@@ -39,9 +51,9 @@ app_name is optional and can be whatever you want it to be. A crazy name you can
 
 ### Set the buildpack
 
-Heroku uses framework-specific buildpacks in order to know how to run-your app.
+Heroku uses framework-specific buildpacks in order to know how to run your app.
 
-To deploy this repo as a heroku app, you'll need to specify that it should be run using the custiom meteor.js buildpack. To do this, all you need to run is:
+To deploy this repo as a heroku app, you'll need to specify that it should be run using the custom meteor.js buildpack. To do this, all you need to run is:
 
 	heroku buildpacks:set https://github.com/jordansissel/heroku-buildpack-meteor.git
 
@@ -76,6 +88,14 @@ Make sure at least one instance is running:
 Once you are done, your app should be ready at app_name.herokuapp.com! You can quickly open it by running:
 
 	heroku open
+
+If your build is successful, but you get the Application Error page that says  
+```
+An error occurred in the application and your page could not be served. Please try again in a few moments.
+
+If you are the application owner, check your logs for details.
+```
+It can be that by default Heroku opens the app from `https://`. If you open the URL from `http://` it will work fine. To change the settings, you need to add ROOT_URL to the Config Variables in your app settings; the value is `http://YOUR-APP-NAME.herokuapp.com`.
 
 # License
 
