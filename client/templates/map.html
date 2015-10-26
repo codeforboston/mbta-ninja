@@ -1,0 +1,12 @@
+<template name="map">
+
+  <ul class="landing-tabs">
+      <li class="tab"><a href="{{pathFor route='landing'}}"> <i class="mdi-action-list small"></i> List View</a></li>
+      <li class="tab active" ><a href="{{pathFor route='map'}}"><i class="mdi-maps-map small"></i> Map View</a></li>
+  </ul>
+
+<div>
+  <div id="leaflet-map-container"></div>
+</div>
+
+</template>

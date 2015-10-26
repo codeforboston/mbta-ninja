@@ -6,10 +6,12 @@
 
 meteor-platform
 chriswessels:glyphicons-halflings
-d0minikk:materialize-meteor
 copleykj:livestamp
 u2622:persistent-session
 percolate:synced-cron
 iron:router
 momentjs:moment
 nimble:restivus
+d3js:d3
+mrt:leaflet
+d0minikk:materialize-meteor

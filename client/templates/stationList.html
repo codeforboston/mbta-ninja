@@ -1,0 +1,21 @@
+<template name="stationList">
+      <ul class="landing-tabs">
+          <li class="tab active"><a href="{{pathFor route='landing'}}"> <i class="mdi-action-list small"></i> List View</a></li>
+          <li class="tab"><a href="{{pathFor route='map'}}"><i class="mdi-maps-map small"></i> Map View</a></li>
+      </ul>
+
+      <div>
+        <h1 class="transport-type">Subway</h1>
+        <ul class="collapsible" data-collapsible="accordion">
+          {{#each subwayLines}}
+            {{> line}}
+          {{/each}}
+        </ul>
+        <h1 class="transport-type">Commuter rail</h1>
+        <ul class="collapsible" data-collapsible="accordion">
+          {{#each trainLines}}
+            {{> line}}
+          {{/each}}
+        </ul>
+      </div>
+</template>

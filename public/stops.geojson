@@ -1,0 +1,4144 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.105682,
+          42.333722
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "fenwood-road",
+        "name": "Fenwood Road",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "mission-park"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.149072,
+          42.334912
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "reservoir",
+        "name": "Reservoir",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "chestnut-hill-station-d"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.032,
+          42.345182
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "northern-ave-amp-tide-st",
+        "name": "Northern Ave. & Tide Street",
+        "originalLines": [
+          "silver",
+          "sl2"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.060327,
+          42.279712
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "cedar-grove",
+        "name": "Cedar Grove",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          "ashmont"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.022476,
+          42.379759
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "wood-island",
+        "name": "Wood Island",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "airport"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1159074306,
+          42.3511308015
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "saint-paul-st-b",
+        "name": "Saint Paul Street",
+        "originalLines": [
+          "green",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "pleasant-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.116759,
+          42.343366
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "saint-paul-st-c",
+        "name": "Saint Paul Street",
+        "originalLines": [
+          "green",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "coolidge-corner"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.075724,
+          42.347314
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "back-bay",
+        "name": "Back Bay",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "massachusetts-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.070493,
+          42.361279
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "charlesmgh",
+        "name": "Charles/MGH",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "park-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.034448,
+          42.344579
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "dry-dock-ave-amp-design-center-place",
+        "name": "Dry Dock Ave. & Design Center Place",
+        "originalLines": [
+          "silver",
+          "sl2"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.057117,
+          42.342793
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "broadway",
+        "name": "Broadway",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "andrew"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.007034,
+          42.232848
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "quincy",
+        "lines": [
+          "red"
+        ],
+        "id": "quincy-adams",
+        "name": "Quincy Adams",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "braintree"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.047514,
+          42.352724
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "courthouse",
+        "name": "Courthouse",
+        "originalLines": [
+          "silver",
+          "sl2",
+          "sl1"
+        ],
+        "nextStop": [
+          "world-trade-center"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.099787,
+          42.322893
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "jackson-square",
+        "name": "Jackson Square",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "stony-brook"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.124702,
+          42.351833
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "packards-corner",
+        "name": "Packards Corner",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "harvard-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.057421,
+          42.359063
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "state-st",
+        "name": "State Street",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "downtown-crossing"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.034119,
+          42.343927
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "black-falcon-ave-amp-design-center-place",
+        "name": "Black Falcon Ave. & Design Center Place",
+        "originalLines": [
+          "silver",
+          "sl2"
+        ],
+        "nextStop": [
+          "88-black-falcon-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.063229,
+          42.284219
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "ashmont",
+        "name": "Ashmont",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.252327,
+          42.337394
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "newton",
+        "lines": [
+          "green"
+        ],
+        "id": "riverside",
+        "name": "Riverside",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.067612,
+          42.270093
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "milton",
+        "lines": [
+          "red"
+        ],
+        "id": "milton",
+        "name": "Milton",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          "butler"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.142449,
+          42.395261
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "cambridge",
+        "lines": [
+          "red"
+        ],
+        "id": "alewife",
+        "name": "Alewife",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "davis"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.039287,
+          42.347928
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "silver-line-way",
+        "name": "Silver Line Way",
+        "originalLines": [
+          "silver",
+          "sl2",
+          "sl1"
+        ],
+        "nextStop": [
+          "306-northern-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.113377,
+          42.300023
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "jamaica-plain",
+        "lines": [
+          "orange"
+        ],
+        "id": "forest-hills",
+        "name": "Forest Hills",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.111406,
+          42.32996
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "back-of-the-hill",
+        "name": "Back of the Hill",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "heath-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.028456,
+          42.344681
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "25-dry-dock-ave",
+        "name": "25 Dry Dock Ave.",
+        "originalLines": [
+          "silver",
+          "sl2"
+        ],
+        "nextStop": [
+          "21-dry-dock-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.100235,
+          42.349126
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "blandford-st",
+        "name": "Blandford Street",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "boston-university-east"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.142593,
+          42.343886
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "washington-st",
+        "name": "Washington Street",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "sutherland-road"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.029307,
+          42.274957
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "quincy",
+        "lines": [
+          "red"
+        ],
+        "id": "north-quincy",
+        "name": "North Quincy",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "wollaston"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.135387,
+          42.339258
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "washington-sq",
+        "name": "Washington Sq",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "tappan-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.076593,
+          42.370774
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "cambridge",
+        "lines": [
+          "green"
+        ],
+        "id": "lechmere",
+        "name": "Lechmere",
+        "originalLines": [
+          "green-e",
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "science-park"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.07052,
+          42.372593
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "community-college",
+        "name": "Community College",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "north-station"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.057922,
+          42.363222
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "haymarket",
+        "name": "Haymarket",
+        "originalLines": [
+          "green-e",
+          "green-d",
+          "green",
+          "green-c",
+          "orange"
+        ],
+        "nextStop": [
+          "government-center"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.166124,
+          42.339902
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brighton",
+        "lines": [
+          "green"
+        ],
+        "id": "boston-college",
+        "name": "Boston College",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06955,
+          42.34136
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "union-park-st",
+        "name": "Union Park Street",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.129327,
+          42.339683
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "brandon-hall",
+        "name": "Brandon Hall",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "fairbanks-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.11068,
+          42.32868
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "heath-st",
+        "name": "Heath Street",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.062129,
+          42.361457
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "bowdoin",
+        "name": "Bowdoin",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.141549,
+          42.337847
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "dean-road",
+        "name": "Dean Road",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "englewood-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.081205,
+          42.332709
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "melnea-cass-blvd",
+        "name": "Melnea Cass Blvd",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          "lenox-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.077056,
+          42.383434
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "charlestown",
+        "lines": [
+          "orange"
+        ],
+        "id": "sullivan-square",
+        "name": "Sullivan Square",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "community-college"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.053175,
+          42.311099
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "savin-hill",
+        "name": "Savin Hill",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop":   [
+            "fields-corner",
+            "jfkumass"
+          ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.018148,
+          42.367461
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "terminals-c-amp-d",
+        "name": "Terminal C",
+        "originalLines": [
+          "silver",
+          "sl1"
+        ],
+        "nextStop": [
+          "terminal-e"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.113885,
+          42.344125
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "kent-st",
+        "name": "Kent Street",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "saint-paul-st-c"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.090437,
+          42.335742
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "ruggles",
+        "name": "Ruggles",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "roxbury-crossing"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.118129,
+          42.332002
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "brookline-village",
+        "name": "Brookline Village",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "brookline-hills"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.078958,
+          42.334958
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "lenox-st",
+        "name": "Lenox Street",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.00085,
+          42.20855
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "braintree",
+        "lines": [
+          "red"
+        ],
+        "id": "braintree",
+        "name": "Braintree",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.138705,
+          42.338469
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "tappan-st",
+        "name": "Tappan Street",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "dean-road"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.109678,
+          42.333106
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "mission-park",
+        "name": "Mission Park",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "riverway"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.152961,
+          42.338145
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "chestnut-hill-ave",
+        "name": "Chestnut Hill Ave.",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "south-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.131197,
+          42.350118
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "harvard-ave",
+        "name": "Harvard Ave.",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "griggs-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.990986,
+          42.413963
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "wonderland",
+        "name": "Wonderland",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "revere-beach"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06461,
+          42.352337
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "boylston",
+        "name": "Boylston",
+        "originalLines": [
+          "sl5",
+          "green",
+          "green-e",
+          "green-d",
+          "silver",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "arlington"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.111129,
+          42.34487
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "hawes-st",
+        "name": "Hawes Street",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "kent-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.021494,
+          42.364422
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "terminal-a",
+        "name": "Terminal A",
+        "originalLines": [
+          "silver",
+          "sl1"
+        ],
+        "nextStop": [
+          "terminal-b-stop-1"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.060465,
+          42.355453
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "downtown-crossing",
+        "name": "Downtown Crossing",
+        "originalLines": [
+          "orange",
+          "red"
+        ],
+        "nextStop": [
+          "chinatown"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.077232,
+          42.336378
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "mass-ave",
+        "name": "Mass Ave.",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          "worcester-sq"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.057421,
+          42.359065
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "state",
+        "name": "State",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "government-center"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.065912,
+          42.293712
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "shawmut",
+        "name": "Shawmut",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "ashmont"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.038422,
+          42.368343
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "maverick",
+        "name": "Maverick",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "aquarium"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.070888,
+          42.437134
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "malden",
+        "lines": [
+          "orange"
+        ],
+        "id": "oak-grove",
+        "name": "Oak Grove",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "malden"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.113833,
+          42.350759
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "boston-university-west",
+        "name": "Boston University West",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "saint-paul-st-b"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.092021,
+          42.267586
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "mattapan",
+        "name": "Mattapan",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          "capen-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.157622,
+          42.339455
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "south-st",
+        "name": "South Street",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "boston-college"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.127031,
+          42.331133
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "brookline-hills",
+        "name": "Brookline Hills",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "beaconsfield"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.059195,
+          42.359868
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "government-center",
+        "name": "Government Center",
+        "originalLines": [
+          "blue",
+          "green",
+          "green-e",
+          "green-d",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "bowdoin"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.118917,
+          42.373936
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "cambridge",
+        "lines": [
+          "red"
+        ],
+        "id": "harvard",
+        "name": "Harvard Square",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "central-square"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.146162,
+          42.341483
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "sutherland-road",
+        "name": "Sutherland Road",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "chiswick-road"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.051807,
+          42.359634
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "aquarium",
+        "name": "Aquarium",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "state"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.125182,
+          42.340946
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "summit-ave",
+        "name": "Summit Ave.",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "brandon-hall"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.066041,
+          42.343845
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "east-berkeley-st",
+        "name": "East Berkeley Street",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.100052,
+          42.335898
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "longwood-medical-area",
+        "name": "Longwood Medical Area",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "brigham-circle"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.121547,
+          42.35169
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "babcock-st",
+        "name": "Babcock Street",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "packards-corner"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.131304,
+          42.339474
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "fairbanks-st",
+        "name": "Fairbanks Street",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "washington-sq"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.081401,
+          42.345503
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "prudential",
+        "name": "Prudential",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "symphony"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.064651,
+          42.346443
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "herald-st",
+        "name": "Herald Street",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.106804,
+          42.34989
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "boston-university-central",
+        "name": "Boston University Central",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "boston-university-west"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.029485,
+          42.374542
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "airport",
+        "name": "Airport",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "maverick"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.074144,
+          42.426678
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "malden",
+        "lines": [
+          "orange"
+        ],
+        "id": "malden",
+        "name": "Malden",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "wellington"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.122527,
+          42.39662
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "somerville",
+        "lines": [
+          "red"
+        ],
+        "id": "davis",
+        "name": "Davis",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "porter-square"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.052545,
+          42.321065
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "jfkumass",
+        "name": "JFK/UMass",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "north-quincy"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.107125,
+          42.310359
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "green-st",
+        "name": "Green Street",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "forest-hills"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.019721,
+          42.265972
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "quincy",
+        "lines": [
+          "red"
+        ],
+        "id": "wollaston",
+        "name": "Wollaston",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "quincy-center"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.088717,
+          42.340307
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "northeastern",
+        "name": "Northeastern University",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "museum-of-fine-arts"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.077463,
+          42.349991
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "copley",
+        "name": "Copley",
+        "originalLines": [
+          "green-e",
+          "green-d",
+          "green",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "prudential",
+          "hynes-convention-center"
+
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.067666,
+          42.366664
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "science-park",
+        "name": "Science Park",
+        "originalLines": [
+          "green-e",
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "north-station"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.018588,
+          42.361325
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "terminal-b-stop-1",
+        "name": "Terminal B Stop 1",
+        "originalLines": [
+          "silver",
+          "sl1"
+        ],
+        "nextStop": [
+          "terminal-b-stop-2"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.01882,
+          42.364441
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "terminal-b-stop-2",
+        "name": "Terminal B Stop 2",
+        "originalLines": [
+          "silver",
+          "sl1"
+        ],
+        "nextStop": [
+          "terminals-c-amp-d"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.083025,
+          42.267772
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "milton",
+        "lines": [
+          "red"
+        ],
+        "id": "valley-Road",
+        "name": "Valley Road",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.04206,
+          42.349098
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "world-trade-center",
+        "name": "World Trade Center",
+        "originalLines": [
+          "silver",
+          "sl2",
+          "sl1"
+        ],
+        "nextStop": [
+          "silver-line-way"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.061251,
+          42.365551
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "north-station",
+        "name": "North Station",
+        "originalLines": [
+          "green-e",
+          "green-d",
+          "green",
+          "green-c",
+          "orange"
+        ],
+        "nextStop": [
+          "haymarket"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.083072,
+          42.341762
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "massachusetts-ave",
+        "name": "Massachusetts Ave.",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "ruggles"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.073783,
+          42.338754
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "newton-st",
+        "name": "Newton Street",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.070817,
+          42.351847
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "arlington",
+        "name": "Arlington",
+        "originalLines": [
+          "green-e",
+          "green-d",
+          "green",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "copley"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.004798,
+          42.250879
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "quincy",
+        "lines": [
+          "red"
+        ],
+        "id": "quincy-center",
+        "name": "Quincy Center",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "quincy-adams"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.103866,
+          42.349569
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "boston-university-east",
+        "name": "Boston University East",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "boston-university-central"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.084529,
+          42.342919
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "symphony",
+        "name": "Symphony",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "northeastern"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.992363,
+          42.39745
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "revere",
+        "lines": [
+          "blue"
+        ],
+        "id": "beachmont",
+        "name": "Beachmont",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "suffolk-downs"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.062202,
+          42.356332
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "park-st",
+        "name": "Park Street",
+        "originalLines": [
+          "green",
+          "green-c",
+          "green-e",
+          "green-d",
+          "red",
+          "green-b"
+        ],
+        "nextStop": [
+          "boylston"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.062453,
+          42.272253
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "butler",
+        "name": "Butler",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          "cedar-grove"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.140849,
+          42.335805
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "beaconsfield",
+        "name": "Beaconsfield",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "reservoir"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.140224,
+          42.348366
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "warren-st",
+        "name": "Warren Street",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "washington-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.088148,
+          42.347953
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "hynes-convention-center",
+        "name": "Hynes Convention Center",
+        "originalLines": [
+          "green-d",
+          "green",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "kenmore"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.120888,
+          42.342226
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "coolidge-corner",
+        "name": "Coolidge Corner",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "summit-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.107385,
+          42.345947
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "saint-mary-st",
+        "name": "Saint Mary Street",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+        "hawes-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.150459,
+          42.340839
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "chiswick-road",
+        "name": "Chiswick Road",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "chestnut-hill-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.056979,
+          42.329752
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "andrew",
+        "name": "Andrew",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "jfkumass"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.035215,
+          42.346621
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "northern-ave-amp-harbor-st",
+        "name": "Northern Ave. & Harbor Street",
+        "originalLines": [
+          "silver",
+          "sl2"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.145357,
+          42.337049
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "englewood-ave",
+        "name": "Englewood Ave.",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          "cleveland-circle"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.035882,
+          42.34769
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "306-northern-ave",
+        "name": "306 Northern Ave.",
+        "originalLines": [
+          "silver",
+          "sl2"
+        ],
+        "nextStop": [
+          "northern-ave-amp-harbor-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.087436,
+          42.267622
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "milton",
+        "lines": [
+          "red"
+        ],
+        "id": "capen-st",
+        "name": "Capen Street",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.112004,
+          42.331686
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "riverway",
+        "name": "Riverway",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "back-of-the-hill"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.084266,
+          42.329379
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "dudley-square",
+        "name": "Dudley Square",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          "melnea-cass-blvd"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.230712,
+          42.325981
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "newton",
+        "lines": [
+          "green"
+        ],
+        "id": "waban",
+        "name": "Waban",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "woodland"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.118783,
+          42.351345
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "pleasant-st",
+        "name": "Pleasant Street",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "babcock-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.062759,
+          42.352529
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "chinatown",
+        "name": "Chinatown",
+        "originalLines": [
+          "orange",
+          "sl4",
+          "silver",
+          "sl5"
+        ],
+        "nextStop": [
+          "tufts-medical-center"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.134551,
+          42.348542
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "griggs-st",
+        "name": "Griggs Street",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "allston-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.063877,
+          42.349504
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "tufts-medical-center",
+        "name": "Tufts Medical Center",
+        "originalLines": [
+          "orange",
+          "sl4",
+          "silver",
+          "sl5"
+        ],
+        "nextStop": [
+          "back-bay"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.086058,
+          42.362427
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "cambridge",
+        "lines": [
+          "red"
+        ],
+        "id": "kendallmit",
+        "name": "Kendall",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "charlesmgh"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.095125,
+          42.337732
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "museum-of-fine-arts",
+        "name": "Museum of Fine Arts",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "longwood-medical-area"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.119159,
+          42.388353
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "cambridge",
+        "lines": [
+          "red"
+        ],
+        "id": "porter-square",
+        "name": "Porter Square",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "harvard"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.095128,
+          42.348783
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "kenmore",
+        "name": "Kenmore",
+        "originalLines": [
+          "green-d",
+          "green",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "fenway",
+          "saint-mary-st",
+          "blandford-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.075846,
+          42.337386
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "worcester-sq",
+        "name": "Worcester Sq",
+        "originalLines": [
+          "sl4",
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          "newton-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.076969,
+          42.405202
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "malden",
+        "lines": [
+          "orange"
+        ],
+        "id": "wellington",
+        "name": "Wellington",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "sullivan-square"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.99256,
+          42.408389
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "revere",
+        "lines": [
+          "blue"
+        ],
+        "id": "revere-beach",
+        "name": "Revere Beach",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "beachmont"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.217023,
+          42.318744
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "newton",
+        "lines": [
+          "green"
+        ],
+        "id": "eliot",
+        "name": "Eliot",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "waban"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.997678,
+          42.390232
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "suffolk-downs",
+        "name": "Suffolk Downs",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "orient-heights"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.110215,
+          42.341042
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "brookline",
+        "lines": [
+          "green"
+        ],
+        "id": "longwood-station",
+        "name": "Longwood Station",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "brookline-village"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.060465,
+          42.355453
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "downtown-crossing-at-temple-place",
+        "name": "Downtown Crossing at Temple Place",
+        "originalLines": [
+          "sl5",
+          "silver"
+        ],
+        "nextStop": [
+          "boylston"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.24434,
+          42.333336
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "newton",
+        "lines": [
+          "green"
+        ],
+        "id": "woodland",
+        "name": "Woodland",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "riverside"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.061516,
+          42.299992
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "fields-corner",
+        "name": "Fields Corner",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "shawmut"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.055428,
+          42.352573
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "south-station",
+        "name": "South Station",
+        "originalLines": [
+          "sl4",
+          "sl2",
+          "silver",
+          "red",
+          "sl1"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.104021,
+          42.317251
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "stony-brook",
+        "name": "Stony Brook",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "green-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.004941,
+          42.386769
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "blue"
+        ],
+        "id": "orient-heights",
+        "name": "Orient Heights",
+        "originalLines": [
+          "blue"
+        ],
+        "nextStop": [
+          "wood-island"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.205966,
+          42.321539
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "newton",
+        "lines": [
+          "green"
+        ],
+        "id": "newton-highlands",
+        "name": "Newton Highlands",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "eliot"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.073249,
+          42.269965
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "milton",
+        "lines": [
+          "red"
+        ],
+        "id": "central-ave",
+        "name": "Central Ave.",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          "milton"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.16529,
+          42.326601
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "newton",
+        "lines": [
+          "green"
+        ],
+        "id": "chestnut-hill-station-d",
+        "name": "Chestnut Hill Station D",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "newton-centre"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.020134,
+          42.369457
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "terminal-e",
+        "name": "Terminal E",
+        "originalLines": [
+          "silver",
+          "sl1"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.149406,
+          42.336197
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "cleveland-circle",
+        "name": "Cleveland Circle",
+        "originalLines": [
+          "green",
+          "green-c"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.137888,
+          42.348468
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "allston-st",
+        "name": "Allston Street",
+        "originalLines": [
+          "green",
+          "green-b"
+        ],
+        "nextStop": [
+          "warren-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.095555,
+          42.331388
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "roxbury-crossing",
+        "name": "Roxbury Crossing",
+        "originalLines": [
+          "orange"
+        ],
+        "nextStop": [
+          "jackson-square"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.02724,
+          42.344105
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "88-black-falcon-ave",
+        "name": "88 Black Falcon Ave.",
+        "originalLines": [
+          "silver",
+          "sl2"
+        ],
+        "nextStop": [
+          "25-dry-dock-ave"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.103474,
+          42.365326
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "cambridge",
+        "lines": [
+          "red"
+        ],
+        "id": "central-square",
+        "name": "Central Square",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          "kendallmit"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.10437,
+          42.334268
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "brigham-circle",
+        "name": "Brigham Circle",
+        "originalLines": [
+          "green-e",
+          "green"
+        ],
+        "nextStop": [
+          "fenwood-road"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.104156,
+          42.345347
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "fenway",
+        "name": "Fenway",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "longwood-station"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.194444,
+          42.328354
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "newton",
+        "lines": [
+          "green"
+        ],
+        "id": "newton-centre",
+        "name": "Newton Centre",
+        "originalLines": [
+          "green-d",
+          "green"
+        ],
+        "nextStop": [
+          "newton-highlands"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.031036,
+          42.344626
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "21-dry-dock-ave",
+        "name": "21 Dry Dock Ave.",
+        "originalLines": [
+          "silver",
+          "sl2"
+        ],
+        "nextStop": [
+          "dry-dock-ave-amp-design-center-place"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.060327,
+          42.279712
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "cedar-grove",
+        "name": "Cedar Grove",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.063229,
+          42.284219
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "ashmont",
+        "name": "Ashmont",
+        "originalLines": [
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.067612,
+          42.270093
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "milton",
+        "lines": [
+          "red"
+        ],
+        "id": "milton",
+        "name": "Milton",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.057922,
+          42.363222
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "haymarket",
+        "name": "Haymarket",
+        "originalLines": [
+          "green-e",
+          "green-d",
+          "green",
+          "green-c",
+          "orange"
+        ],
+        "nextStop": [
+          "state-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06461,
+          42.352337
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "boylston",
+        "name": "Boylston",
+        "originalLines": [
+          "sl5",
+          "green",
+          "green-e",
+          "green-d",
+          "silver",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.060465,
+          42.355453
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "downtown-crossing",
+        "name": "Downtown Crossing",
+        "originalLines": [
+          "orange",
+          "red"
+        ],
+        "nextStop": [
+          "south-station"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.092021,
+          42.267586
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "mattapan",
+        "name": "Mattapan",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.059195,
+          42.359868
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "green"
+        ],
+        "id": "government-center",
+        "name": "Government Center",
+        "originalLines": [
+          "blue",
+          "green",
+          "green-e",
+          "green-d",
+          "green-c",
+          "green-b"
+        ],
+        "nextStop": [
+          "park-st"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.083025,
+          42.267772
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "milton",
+        "lines": [
+          "red"
+        ],
+        "id": "valley-Road",
+        "name": "Valley Road",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.061251,
+          42.365551
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "orange"
+        ],
+        "id": "north-station",
+        "name": "North Station",
+        "originalLines": [
+          "green-e",
+          "green-d",
+          "green",
+          "green-c",
+          "orange"
+        ],
+        "nextStop": [
+          "haymarket"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.062202,
+          42.356332
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "park-st",
+        "name": "Park Street",
+        "originalLines": [
+          "green",
+          "green-c",
+          "green-e",
+          "green-d",
+          "red",
+          "green-b"
+        ],
+        "nextStop": [
+          "downtown-crossing"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.062453,
+          42.272253
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "butler",
+        "name": "Butler",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.087436,
+          42.267622
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "milton",
+        "lines": [
+          "red"
+        ],
+        "id": "capen-st",
+        "name": "Capen Street",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.062759,
+          42.352529
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "chinatown",
+        "name": "Chinatown",
+        "originalLines": [
+          "orange",
+          "sl4",
+          "silver",
+          "sl5"
+        ],
+        "nextStop": [
+          "south-station"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.063877,
+          42.349504
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "silver"
+        ],
+        "id": "tufts-medical-center",
+        "name": "Tufts Medical Center",
+        "originalLines": [
+          "orange",
+          "sl4",
+          "silver",
+          "sl5"
+        ],
+        "nextStop": [
+          "chinatown"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.055428,
+          42.352573
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "boston",
+        "lines": [
+          "red"
+        ],
+        "id": "south-station",
+        "name": "South Station",
+        "originalLines": [
+          "sl4",
+          "sl2",
+          "silver",
+          "red",
+          "sl1"
+        ],
+        "nextStop": [
+          "broadway"
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.073249,
+          42.269965
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "area": "milton",
+        "lines": [
+          "red"
+        ],
+        "id": "central-ave",
+        "name": "Central Ave.",
+        "originalLines": [
+          "mattapan",
+          "red"
+        ],
+        "nextStop": [
+          null
+        ]
+      }
+    }
+  ]
+}
