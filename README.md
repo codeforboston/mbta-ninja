@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/codeforboston/mbta-ninja.png?label=ready&title=Ready)](https://waffle.io/codeforboston/mbta-ninja)
 # MBTA Ninja
 MBTA Ninja is a crowdsourced alerting system for public transit in Boston.
 
