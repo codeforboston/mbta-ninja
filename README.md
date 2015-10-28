@@ -95,7 +95,45 @@ An error occurred in the application and your page could not be served. Please t
 
 If you are the application owner, check your logs for details.
 ```
-It can be that by default Heroku opens the app from `https://`. If you open the URL from `http://` it will work fine. To change the settings, you need to add ROOT_URL to the Config Variables in your app settings; the value is `http://YOUR-APP-NAME.herokuapp.com`.
+It can be that by default Heroku opens the app from `https://`. If you open the URL from `http://` it will work fine. To change the settings, you need to add ROOT_URL to the Config Variables in your app settings; the value is `http://YOUR-APP-NAME.herokuapp.com`.  
+
+If you still see the error message above when trying to access your heroku site, check the logs by running:
+
+    heroku logs
+
+See if you find the following chunk:
+```
+2015-10-27T07:12:02.635321+00:00 heroku[web.1]: Starting process with command `node build/bundle/main.js`
+2015-10-27T07:12:05.973980+00:00 app[web.1]:
+2015-10-27T07:12:05.974084+00:00 app[web.1]: /app/build/bundle/programs/server/node_modules/fibers/future.js:245
+2015-10-27T07:12:05.974491+00:00 app[web.1]: 						      ^
+2015-10-27T07:12:05.974489+00:00 app[web.1]: 						throw(ex);
+2015-10-27T07:12:06.060729+00:00 app[web.1]: Error: MONGO_URL must be set in environment
+2015-10-27T07:12:06.060733+00:00 app[web.1]:     at Object.<anonymous> (packages/mongo/remote_collection_driver.js:36:1)
+2015-10-27T07:12:06.060734+00:00 app[web.1]:     at Object.defaultRemoteCollectionDriver (packages/underscore/underscore.js:750:1)
+2015-10-27T07:12:06.060735+00:00 app[web.1]:     at new Mongo.Collection (packages/mongo/collection.js:98:1)
+2015-10-27T07:12:06.060736+00:00 app[web.1]:     at app/lib/report.js:1:46
+2015-10-27T07:12:06.060736+00:00 app[web.1]:     at app/lib/report.js:121:3
+2015-10-27T07:12:06.060737+00:00 app[web.1]:     at /app/build/bundle/programs/server/boot.js:222:10
+2015-10-27T07:12:06.060738+00:00 app[web.1]:     at Array.forEach (native)
+2015-10-27T07:12:06.060739+00:00 app[web.1]:     at Function._.each._.forEach (/app/build/bundle/programs/server/node_modules/underscore/underscore.js:79:11)
+2015-10-27T07:12:06.060740+00:00 app[web.1]:     at /app/build/bundle/programs/server/boot.js:117:5
+2015-10-27T07:12:06.939374+00:00 heroku[web.1]: State changed from starting to crashed
+2015-10-27T07:12:06.925353+00:00 heroku[web.1]: Process exited with status 8
+```
+If so, you need to set a MONGO_URL config variable on your app. You should already have a MONGOLAB_URI variable associated with your app from the addon, you can check with
+
+    heroku config
+
+We're going to set the MONGO_URL value to the same as MONGOLAB_URI. There are two ways to do this:  
+
+1. Copy the MONGOLAB_URI value from `heroku config` and run
+
+    heroku config:set MONGO_URL=<MONGOLAB_URI Value>
+
+2. Go to the heroku dashboard and add MONGO_URL to the Config Variables in Settings. To see these you'll need to click a button labeled `Reveal Config Vars`
+
+Once saved, wait a second for the change to propogate and then check your heroku app's URL. You should be good to go!
 
 # License
 
