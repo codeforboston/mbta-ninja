@@ -142,10 +142,15 @@ ul.collapsible {
 }
 
 .line-being-viewed {
-  margin-top: 15px;
-  text-align: center;
-  width: 100%;
+  margin-top: 12px;
+  margin-left: 3.5em;
+  width: 80%;
   font-size: 16px;
+  line-height: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .top-panel {
