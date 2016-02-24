@@ -14,21 +14,12 @@
         <li>No need to refresh, the app updates on its own.</li>
       </ul>
 
-      <h1 class="transport-type">Subway</h1>
-      <ul class="collapsible" data-collapsible="accordion">
-        {{#each subwayLines}}
-          {{> line}}
-        {{/each}}
-      </ul>
-
-      <h1 class="transport-type">Commuter rail</h1>
-      <ul class="collapsible" data-collapsible="accordion">
-        {{#each trainLines}}
-          {{> line}}
-        {{/each}}
-      </ul>
-
-      <div class="share-buttons">
+    {{ #if showMapView }}
+      {{ > map }}
+    {{ else }}
+      {{ > stationList }}
+    {{ /if }}
+   <div class="share-buttons">
         <div class="fb-share-button" data-href="http://mbta.ninja" data-layout="button_count"></div>
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mbta.ninja" data-text="Check out MBTA Ninja - Waze for the T" data-via="mbta_ninja" data-hashtags="mbta">Tweet</a>
       </div>

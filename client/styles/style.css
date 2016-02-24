@@ -302,3 +302,98 @@ iframe#twitter-widget-0 {
 .card a.btn-vote i.left {
   margin-right: 5px;
 }
+
+
+
+/* ==========================================================================
+   For the map visualization
+   ========================================================================== */
+
+/* tabs */
+ .landing-tabs i {
+   position: relative;
+   top: 6px;
+ }
+
+.landing-tabs li.tab {
+  display: inline-block;
+  width: 44%;
+  border-bottom: 3px solid white;
+}
+
+.landing-tabs li.tab a {
+  display: inline-block;
+  padding-bottom: 6px;
+  width: 100%;
+  height: 100%:
+}
+
+.landing-tabs li.tab:hover {
+  border-bottom: 3px solid #DCDCDC;
+}
+
+.landing-tabs li.tab.active {
+border-bottom: 3px solid #039be5;
+}
+
+.landing-tabs li.tab.active:hover {
+  border-bottom: 3px solid #039be5;
+}
+
+/* map */
+
+#map .station {
+  stroke:none;
+}
+#map .station.no-report {
+  opacity: .5;
+}
+
+#map .mbta-line {
+  fill:none;
+  stroke-width: 2px;
+  opacity: .5;
+}
+
+#map .station.has-report circle {
+  stroke:2px;
+  fill: #fff;
+}
+
+#map .leaflet-tile-pane {
+  opacity: .8;
+}
+
+#map .station-label {
+  text-anchor: middle;
+  font-size: 1.2em;
+}
+
+#map .terminator-label {
+  text-anchor: middle;
+  font-size: 1.3em;
+  fill: #ABA9A9;
+  font-weight: bold;
+}
+
+#map .direction-arrow {
+fill: #fff;
+stroke-width: 2.5px;
+stroke-opacity: .8;
+}
+
+#leaflet-map-container {
+  width: 480px;
+  height: 530px;
+  margin-bottom: 40px;
+}
+
+#map .tooltip-station-title {
+  border-bottom: 3px solid gray;
+  padding-bottom: 4px;
+}
+
+#map .line-link {
+  stroke-width: 3px;
+  opacity: .4;
+}

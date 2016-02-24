@@ -14,16 +14,6 @@ Template.landing.rendered = function() {
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-  // Collapsible lines
-  $('.collapsible').collapsible({
-    accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-  });
-
-  // Make whole div with line clickable
-  $(".collapsible-body").click(function() {
-    window.location = $(this).find("a").attr("href");
-    return false;
-  });
 
   // Detect Android browsers and suggest install of app
   var ua = navigator.userAgent.toLowerCase();
@@ -33,42 +23,11 @@ Template.landing.rendered = function() {
   }
 };
 
-Template.landing.events({
-  'click .line-item': function(e) {
-    $(this).toggleClass('active');
-  }
-});
 
 Template.landing.helpers({
-  subwayLines: function() {
-    return listOfLines().subway;
-  },
-  trainLines: function() {
-    return listOfLines().train;
-  }
-});
-
-Template.line.helpers({
-  noReports: function(){
-    return numReports(this.path) === 0;
-  },
-  numReports: function(){
-    return numReports(this.path);
-  },
-  numLineReports: function() {
-    
-    var lineReports = 0;
-    for(var i = 0; i< this.directions.length; i++){
-      lineReports += numReports(this.directions[i].path);
+  showMapView : function(){
+    if (Router.current().route.getName() === "map"){
+      return true;
     }
-    return lineReports;
-  },
-  noLineReports: function()
-  {
-    var lineReports = 0;
-    for(var i = 0; i< this.directions.length; i++){
-      lineReports += numReports(this.directions[i].path);
-    }
-    return lineReports === 0;
   }
 });

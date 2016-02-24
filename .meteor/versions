@@ -11,6 +11,7 @@ chriswessels:glyphicons-halflings@2.0.0
 coffeescript@1.0.6
 copleykj:livestamp@1.1.6
 d0minikk:materialize-meteor@1.95.1
+d3js:d3@3.5.5
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
@@ -40,6 +41,7 @@ minimongo@1.0.8
 mobile-status-bar@1.0.3
 momentjs:moment@2.10.2
 mongo@1.1.0
+mrt:leaflet@0.3.8
 nimble:restivus@0.6.3
 observe-sequence@1.0.6
 ordered-dict@1.0.3
