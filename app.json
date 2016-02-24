@@ -1,0 +1,7 @@
+{
+  "name": "mbta-ninja",
+  "description": "MBTA Ninja! http://mbta.ninja",
+  "repository": "https://github.com/codeforboston/mbta-ninja",
+  "logo": "https://github.com/codeforboston/mbta-ninja/blob/master/resources/ninja-512.png",
+  "keywords": ["meteor", "static"]
+}
