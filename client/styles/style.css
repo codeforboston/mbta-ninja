@@ -236,7 +236,11 @@ span.report-detail {
   max-width: 500px;
 }
 
-#add-modal .modal-content{
+#add-modal .modal-content {
+  margin-bottom: 20px;
+}
+
+#add-normal-modal .modal-content {
   margin-bottom: 20px;
 }
 
