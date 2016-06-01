@@ -42,6 +42,7 @@
 }
 
 /* Colors are from MBTA maps */
+
 .red-line {
   background-color: #C60813;
 }
@@ -82,6 +83,7 @@ ul.slogans {
 /* Collapsible menu styling */
 
 ul.collapsible {
+  text-align: right;
   margin-bottom: 30px;
 }
 
@@ -100,10 +102,31 @@ ul.collapsible {
   color: black;
 }
 
+
 .collapsible-header {
+  position: relative;
   text-align: left;
   padding-left: 0px;
+
 }
+
+.collapsible-text {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  left: 55px;
+  right: 23%;
+  /*left: 57px;
+  right: 51px;
+  */
+  text-overflow: ellipsis;
+}
+
+/* . means class
+# - means id
+name with not dot is the tag name
+*/
 
 .collapsible-header:hover {
   background-color: #f0f0f0;
