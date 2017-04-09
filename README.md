@@ -15,6 +15,29 @@ Please create a GitHub issue if you have an idea. And if you're able to code a s
 
 Our roadmap is available on [Waffle](https://waffle.io/codeforboston/mbta-ninja).
 
+### Running MBTA Ninja Locally
+
+MBTA Ninja is built with Meteor, so you must first install it. On Windows, download the latest installer from https://www.meteor.com/install. On Linux or macOS, run the following command:
+
+```sh
+curl https://install.meteor.com/ | sh
+```
+
+Next, clone the MBTA Ninja repository:
+
+```sh
+git clone https://github.com/codeforboston/mbta-ninja.git
+cd mbta-ninja
+```
+
+Now, simply run the Meteor development server:
+
+```sh
+meteor
+```
+
+All dependencies, including the database, are included with or downloaded by Meteor, so this is all you need to do.
+
 ## Deployment
 
 MBTA Ninja is deployed on [Heroku](http://heroku.com). Below is a quick guide to getting it up and running so you don't have to suffer too much to get it set up.
